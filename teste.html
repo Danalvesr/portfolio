@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hexagono {
+            margin-top: 5rem;
+   width: 100px;
+   height: 55px;
+   background: red;
+   position: relative;
+}
+#hexagono:before {
+   content: "";
+   position: absolute;
+   top: -25px;
+   left: 0;
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-bottom: 25px solid red;
+}
+    </style>
+</head>
+<body>
+    <div id="hexagono"></div>
+    <div class="uk-inline uk-margin">
+
+        <img src="images/photo.jpg" width="1800" height="1200" alt="">
+    
+        <div class="uk-position-top uk-overlay uk-overlay-default uk-text-center">Top</div>
+        <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center">Bottom</div>
+        <div class="uk-position-left uk-overlay uk-overlay-default uk-flex uk-flex-middle">Left</div>
+        <div class="uk-position-right uk-overlay uk-overlay-default uk-flex uk-flex-middle">Right</div>
+    
+    </div>
+</body>
+</html>

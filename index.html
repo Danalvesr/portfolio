@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.fadethis.js"></script>
+
+    <style>
+      
+        html{
+            background-color: #000;
+        }
+        #nav{
+            height: 60px;
+        }
+        .uk-navbar-nav > li{
+            height: 60px;
+        }
+        .uk-navbar-nav > li:hover{
+            background-color: #D3D3D3;
+        }
+        .uk-navbar-nav > li > a{   
+            text-decoration: none;
+            font-size: 17px;
+            color: white;
+            margin-top: -0.7rem;
+        }
+        .uk-navbar-container.scrolled {
+            background: #000;
+            opacity: 1; 
+        }
+        .card-ini{
+            color: #fff;
+            font-size: 25px;
+        }
+        .projects > .uk-card{
+            background-color: #000;
+        }
+        .projects > .uk-card:hover{
+            background-color: #000;
+        }
+        #uk-totop{
+            float: right;
+            margin-right: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+        <div uk-sticky="end: #transparent-sticky-navbar; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-center">
+        
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#tecnologias">Tecnologias</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+
+        <div class="uk-flex uk-margin-medium-top uk-text-center uk-height-medium">
+            <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s">
+                <img class="uk-border-circle" src="imagens/perfilluffy.jpg" width="200" height="200" alt="Border circle">
+            </div>
+        </div>
+    
+        <div class="uk-text-large uk-margin-large-top uk-text-center" style="color: #fff;">
+            <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div id="projetos" class="uk-section" style="background-color: #8B0000;">
+    <div class="uk-container">
+
+        <h2 style="text-align: center; color: #fff;" class="uk-margin-large">Projetos</h2>
+       
+          <div uk-slider="autoplay: true" class="uk-slider-container-offset" uk-slider>
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        
+                <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/bancotech.webp" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">BancoTech</h3>
+                                <p>Sistema de gerenciamento de finanças, imitando uma carteira digital, totalmente desenvolvido em PHP puro.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/community.webp" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Community Manager</h3>
+                                <p>Sistema feito para gerenciar setores em uma empresa de tecnologia para saúde. Desenvolvido em Laravel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/inforgames.webp" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">InforGames</h3>
+                                <p>Meu primeiro site, feito somente com html e css, o intuito era colocar em prática tudo aprendidono no curso.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/thenet.webp" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">TheNet</h3>
+                                <p>Site sobre filmes e séries, criado para a prática do curso, totalmente desenvolvido em PHP puro.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/usernet.webp" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">UserNet</h3>
+                                <p>Sistema de login com vários tipos de segurança aplicada, prática do curso, totalmente desenvolvido em PHP puro.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/DevilWheels.png" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">DevilWheels - Unity</h3>
+                                <p>Projeto da faculdade criado na Unity, botando em prática o desenvolvimento de games e usando a linguagem C#.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <img src="imagens/labirinto3d.png" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">DevilWheels - Unity</h3>
+                                <p>Projeto desenvolvido nas férias com o intuito de aprender mais sobre a plataforma Unity e a linguagem C#.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>
+    </div>
+</div>
+
+<div id="tecnologias" class="uk-section uk-section-muted">
+    <div class="uk-container uk-container-large">
+
+        <h2 style="text-align: center;" class="uk-margin-large">Tecnologias</h2>
+        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match" uk-grid>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/salesforce.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">SalesForce</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-sa"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/Laravel.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Laravel</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-l"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/java.jpg">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Java</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-j"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/wordpress.webp">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">WordPress</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-wo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match" uk-grid>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/unity.jpg">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Unity</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-un"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/js.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">JavaScript</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-js"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/html.jpg">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">HTML</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-html"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40" src="imagens/css.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">CSS</h3>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
+                            <div class="progress-css"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-remove-bottom" style="float: right;">
+            <p class="uk-margin-remove-bottom uk-margin-top">Conhecimento em outras tecnologias</p>
+            <img class="uk-border-circle" width="25" height="25" src="imagens/python.jpg">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/mysql.png">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/react.png">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/git.jpg">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/php.jpg">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/c.webp">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/node.png">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/docker.png">
+            <img class="uk-border-circle" width="25" height="25" src="imagens/bootstrap.png">
+        </div>
+    </div>
+</div>
+
+<div id="cursos" class="uk-section uk-section-muted">
+    <div class="uk-container uk-container-large">
+
+        <h2 style="text-align: center;" class="uk-margin-remove-top uk-margin-remove-bottom">Cursos</h2>
+        <h5 class="uk-text-center uk-margin-remove-top uk-margin-medium-bottom">Habilidades</h5>
+
+        <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid>
+
+            <div>
+                <ul uk-accordion="multiple: true; duration: 800">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Criando REST API com Laravel 5.7</a>
+                        <div class="uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Curso de Unity</a>
+                        <div class="uk-accordion-content">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Curso de Laravel 5.8 completo</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Curso de SalesForce - C3C</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul uk-accordion="multiple: true; duration: 800">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Instalação de Software</a>
+                        <div class="uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Linux</a>
+                        <div class="uk-accordion-content">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Técnico em Informática</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul uk-accordion="multiple: true; duration: 800">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Curso de javaScript e TypeScript</a>
+                        <div class="uk-accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Intendendo ECMAScript 6</a>
+                        <div class="uk-accordion-content">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Introdução ao banco de dados com MySQL & PHPMyAdmin</a>
+                        <div class="uk-accordion-content">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+    </div>
+</div>
+
+<div id="contatos" class="uk-section uk-section-small uk-section-secondary">
+    <div class="uk-container">
+
+        <h3 style="color: #fff; text-align: center;">Contatos</h3>
+
+        <div style="justify-content: center" class="uk-dividir-vertical" uk-grid>
+                <div>
+                    <a href="https://www.linkedin.com/in/danielrodriguesalves122" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href="https://trailblazer.me/id/drodriguesalves" target="_blanck"><i class="fa-brands fa-salesforce"></i></a>
+                </div>
+                <div>
+                    <a href="https://github.com/Alves5" target="_blanck"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div>
+                    <a href="mailto:drodriguesalves2@gmail.com?subject= Portifolio online"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+        </div>
+    </div>
+    <a id="uk-totop" href="" uk-totop></a>
+    <p style="text-align: center;">Criado por Daniel Alves | 2022</p>
+</div>
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script src="js/jQuery.rProgressbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script>
+
+  AOS.init();
+
+  function checkScroll(){
+    var startY = $('.uk-navbar-container').height() * 3; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.uk-navbar-container').addClass("scrolled");
+    }else{
+        $('.uk-navbar-container').removeClass("scrolled");
+    }
+}
+
+if($('.uk-navbar-container').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+
+$(window).fadeThis();
+ 
+
+  const clipboard = new ClipboardJS('#texto')
+
+    clipboard.on('success');
+
+    clipboard.on('error');
+ 
+$('.progress-sa').rProgressbar({
+    percentage: 35,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#8B90C1'
+});
+$('.progress-l').rProgressbar({
+    percentage: 30,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#EF3125'
+});
+$('.progress-j').rProgressbar({
+    percentage: 45,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#DC2F31'
+});
+$('.progress-wo').rProgressbar({
+    percentage: 50,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#ECCC57'
+});
+$('.progress-un').rProgressbar({
+    percentage: 35,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#000'
+});
+$('.progress-js').rProgressbar({
+    percentage: 65,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#E4DA21'
+});
+$('.progress-html').rProgressbar({
+    percentage: 80,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#EF5727'
+});
+$('.progress-css').rProgressbar({
+    percentage: 50,
+    borderRadius: '5px',
+    height: '8px',
+    fillBackgroundColor: '#38ABDB'
+});
+</script>
+</html>
