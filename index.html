@@ -54,7 +54,7 @@
     </style>
 </head>
 <body>
-        <div uk-sticky="end: #transparent-sticky-navbar; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-margin-remove-bottom" uk-sticky="end: #transparent-sticky-navbar; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
                 <div class="uk-navbar-center">
         
@@ -62,34 +62,28 @@
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#tecnologias">Tecnologias</a></li>
                         <li><a href="#cursos">Cursos</a></li>
-                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-<div class="uk-section">
-    <div class="uk-container uk-container-large">
-
-        <div class="uk-flex uk-margin-medium-top uk-text-center uk-height-medium">
+<div id="projetos" class="uk-section">
+    <div class="uk-container">
+ 
+    <!--<div class="uk-flex uk-margin-medium-top uk-text-center uk-height-medium">
             <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s">
                 <img class="uk-border-circle" src="imagens/perfilluffy.jpg" width="200" height="200" alt="Border circle">
             </div>
         </div>
     
         <div class="uk-text-large uk-margin-large-top uk-text-center" style="color: #fff;">
-            <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>Prazer, me chamo Daniel Rodrigues. Este site me auxiliará em minha carreira, já que aqui posto os meus projetos e
+                conhecimentos que vou adquirindo todos os dias na minha jornada como desenvolvedor. Espero que goste do 
+                conteúdo, cada linha de código foi feita com bastante dedicação.
             </p>
-        </div>
+        </div> -->
 
-    </div>
-</div>
-
-<div id="projetos" class="uk-section" style="background-color: #8B0000;">
-    <div class="uk-container">
-
-        <h2 style="text-align: center; color: #fff;" class="uk-margin-large">Projetos</h2>
+        <h2 style="color: #fff;" class="uk-text-center uk-margin-remove-top uk-margin-large-bottom">Projetos</h2>
        
           <div uk-slider="autoplay: true" class="uk-slider-container-offset" uk-slider>
 
@@ -168,7 +162,7 @@
                                 <img src="imagens/labirinto3d.png" width="1800" height="1200" alt="">
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">DevilWheels - Unity</h3>
+                                <h3 class="uk-card-title">Labirinto 3D - Unity</h3>
                                 <p>Projeto desenvolvido nas férias com o intuito de aprender mais sobre a plataforma Unity e a linguagem C#.</p>
                             </div>
                         </div>
@@ -183,13 +177,14 @@
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
         
         </div>
+
     </div>
 </div>
 
 <div id="tecnologias" class="uk-section uk-section-muted">
     <div class="uk-container uk-container-large">
 
-        <h2 style="text-align: center;" class="uk-margin-large">Tecnologias</h2>
+        <h2 class="uk-text-center uk-margin-large">Tecnologias</h2>
         <div class="uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match" uk-grid>
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
@@ -340,7 +335,7 @@
 <div id="cursos" class="uk-section uk-section-muted">
     <div class="uk-container uk-container-large">
 
-        <h2 style="text-align: center;" class="uk-margin-remove-top uk-margin-remove-bottom">Cursos</h2>
+        <h2 class="uk-text-center uk-margin-remove-top uk-margin-remove-bottom">Cursos</h2>
         <h5 class="uk-text-center uk-margin-remove-top uk-margin-medium-bottom">Habilidades</h5>
 
         <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid>
@@ -484,10 +479,8 @@
     </div>
 </div>
 
-<div id="contatos" class="uk-section uk-section-small uk-section-secondary">
+<div class="uk-section uk-section-small uk-section-secondary">
     <div class="uk-container">
-
-        <h3 style="color: #fff; text-align: center;">Contatos</h3>
 
         <div style="justify-content: center" class="uk-dividir-vertical" uk-grid>
                 <div>
