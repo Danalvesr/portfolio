@@ -51,6 +51,10 @@
             float: right;
             margin-right: 1.5rem;
         }
+        .vermais-decoration{
+            text-decoration: none !important;
+            color: gray;
+        }
     </style>
 </head>
 <body>
@@ -67,25 +71,12 @@
                 </div>
             </nav>
         </div>
-<div id="projetos" class="uk-section">
-    <div class="uk-container">
- 
-    <!--<div class="uk-flex uk-margin-medium-top uk-text-center uk-height-medium">
-            <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s">
-                <img class="uk-border-circle" src="imagens/perfilluffy.jpg" width="200" height="200" alt="Border circle">
-            </div>
-        </div>
-    
-        <div class="uk-text-large uk-margin-large-top uk-text-center" style="color: #fff;">
-            <p>Prazer, me chamo Daniel Rodrigues. Este site me auxiliará em minha carreira, já que aqui posto os meus projetos e
-                conhecimentos que vou adquirindo todos os dias na minha jornada como desenvolvedor. Espero que goste do 
-                conteúdo, cada linha de código foi feita com bastante dedicação.
-            </p>
-        </div> -->
+
+<div class="uk-container uk-margin-small-top">
 
         <h2 style="color: #fff;" class="uk-text-center uk-margin-remove-top uk-margin-large-bottom">Projetos</h2>
        
-          <div uk-slider="autoplay: true" class="uk-slider-container-offset" uk-slider>
+        <div uk-slider="autoplay: true" class="uk-slider-container-offset" uk-slider>
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
         
@@ -178,7 +169,6 @@
         
         </div>
 
-    </div>
 </div>
 
 <div id="tecnologias" class="uk-section uk-section-muted">
@@ -187,6 +177,7 @@
         <h2 class="uk-text-center uk-margin-large">Tecnologias</h2>
         <div class="uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match" uk-grid>
             <div class="uk-animation-toggle" tabindex="0">
+                
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
@@ -200,7 +191,28 @@
                         <p class="uk-text-meta uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-sa"></div>
                     </div>
+                    <a class="vermais-decoration" href="#modal-salesforce" uk-toggle>Ver mais</a>
                 </div>
+
+                <div id="modal-salesforce" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/salesforce.png">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">SalesForce</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
@@ -216,8 +228,29 @@
                         <p class="uk-text-meta uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-l"></div>
                     </div>
+                    <a class="vermais-decoration" href="#modal-laravel" uk-toggle>Ver mais</a>
+                </div>
+            
+                <div id="modal-laravel" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/Laravel.png">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Laravel</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -232,8 +265,29 @@
                         <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-j"></div>
                     </div>
+                    <a class="vermais-decoration" href="#modal-java" uk-toggle>Ver mais</a>
+                </div>
+
+                <div id="modal-java" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/java.jpg">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Java</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -247,6 +301,26 @@
                     <div class="uk-margin-small-top">
                         <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-wo"></div>
+                    </div>
+                    <a class="vermais-decoration" href="#modal-word" uk-toggle>Ver mais</a>
+                </div>
+
+                <div id="modal-word" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/wordpress.webp">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">WordPress</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,8 +340,29 @@
                         <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-un"></div>
                     </div>
+                    <a class="vermais-decoration" href="#modal-unity" uk-toggle>Ver mais</a>
+                </div>
+
+                <div id="modal-unity" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/unity.jpg">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Unity</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -282,8 +377,29 @@
                         <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-js"></div>
                     </div>
+                    <a class="vermais-decoration" href="#modal-js" uk-toggle>Ver mais</a>
+                </div>
+
+                <div id="modal-js" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/js.png">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">JavaScript</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -298,8 +414,29 @@
                         <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-html"></div>
                     </div>
+                    <a class="vermais-decoration" href="#modal-html" uk-toggle>Ver mais</a>
+                </div>
+
+                <div id="modal-html" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/html.jpg">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">HTML</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="uk-animation-toggle" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -313,6 +450,26 @@
                     <div class="uk-margin-small-top">
                         <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-css"></div>
+                    </div>
+                    <a class="vermais-decoration" href="#modal-css" uk-toggle>Ver mais</a>
+                </div>
+
+                <div id="modal-css" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="imagens/css.png">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">CSS</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
                 </div>
             </div>
