@@ -1,0 +1,34 @@
+html{
+    background-color: #000;
+}
+body, .uk-animation-toggle, .uk-modal-body, h2,h3,h4,h5,p{
+    font-family: "Segoe UI Symbol";
+}
+.uk-navbar-nav > li:hover{
+    background-color: #D3D3D3;
+}
+.uk-navbar-nav > li > a{
+    color: white;
+}
+.uk-navbar-container.scrolled {
+    background: #000;
+    opacity: 1; 
+}
+.card-ini{
+    color: #fff;
+    font-size: 25px;
+}
+.projects > .uk-card{
+    background-color: #000;
+}
+.projects > .uk-card:hover{
+    background-color: #000;
+}
+#uk-totop{
+    float: right;
+    margin-right: 1.5rem;
+}
+.vermais-decoration{
+    text-decoration: none !important;
+    color: gray;
+}

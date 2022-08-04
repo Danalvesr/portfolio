@@ -9,59 +9,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.fadethis.js"></script>
 
-    <style>
-      
-        html{
-            background-color: #000;
-        }
-        #nav{
-            height: 60px;
-        }
-        .uk-navbar-nav > li{
-            height: 60px;
-        }
-        .uk-navbar-nav > li:hover{
-            background-color: #D3D3D3;
-        }
-        .uk-navbar-nav > li > a{   
-            text-decoration: none;
-            font-size: 17px;
-            color: white;
-            margin-top: -0.7rem;
-        }
-        .uk-navbar-container.scrolled {
-            background: #000;
-            opacity: 1; 
-        }
-        .card-ini{
-            color: #fff;
-            font-size: 25px;
-        }
-        .projects > .uk-card{
-            background-color: #000;
-        }
-        .projects > .uk-card:hover{
-            background-color: #000;
-        }
-        #uk-totop{
-            float: right;
-            margin-right: 1.5rem;
-        }
-        .vermais-decoration{
-            text-decoration: none !important;
-            color: gray;
-        }
-    </style>
 </head>
 <body>
         <div class="uk-margin-remove-bottom" uk-sticky="end: #transparent-sticky-navbar; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: relative; z-index: 980;">
                 <div class="uk-navbar-center">
-        
                     <ul class="uk-navbar-nav">
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#tecnologias">Tecnologias</a></li>
@@ -72,11 +29,11 @@
             </nav>
         </div>
 
-<div class="uk-container uk-margin-small-top">
+<div id="projetos" class="uk-container uk-margin-small-top">
 
         <h2 style="color: #fff;" class="uk-text-center uk-margin-remove-top uk-margin-large-bottom">Projetos</h2>
        
-        <div uk-slider="autoplay: true" class="uk-slider-container-offset" uk-slider>
+        <div uk-slider="autoplay: true" class="uk-slider-container-offset uk-align-center" uk-slider>
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
         
@@ -88,7 +45,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">Automação de Processos</h3>
-                                <p>Superbadge - O ponto alto dos meus estudos em salesforce foi ter concluído essa superbadge!</p>
+                                <p class="uk-text-justify">Superbadge - O ponto alto dos meus estudos em salesforce foi ter concluído essa superbadge!</p>
                             </div>
                         </div>
                     </li>
@@ -99,7 +56,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">Desafio C3C - Biblioteca</h3>
-                                <p>Projeto desenvolvido no treinamento da empresa C3C Software. Criação de uma biblioteca.</p>
+                                <p class="uk-text-justify">Projeto desenvolvido no treinamento da empresa C3C Software. Criação de uma biblioteca.</p>
                             </div>
                         </div>
                     </li>
@@ -110,7 +67,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">BancoTech</h3>
-                                <p>Sistema de gerenciamento de finanças, imitando uma carteira digital, totalmente desenvolvido em PHP puro.</p>
+                                <p class="uk-text-justify">Sistema de gerenciamento de finanças, imitando uma carteira digital, totalmente desenvolvido em PHP puro.</p>
                             </div>
                         </div>
                     </li>
@@ -121,7 +78,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">Community Manager</h3>
-                                <p>Sistema feito para gerenciar setores em uma empresa de tecnologia para saúde. Desenvolvido em Laravel.</p>
+                                <p class="uk-text-justify">Sistema feito para gerenciar setores em uma empresa de tecnologia para saúde. Desenvolvido em Laravel.</p>
                             </div>
                         </div>
                     </li>
@@ -132,7 +89,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">InforGames</h3>
-                                <p>Meu primeiro site, feito somente com html e css, o intuito era colocar em prática tudo aprendidono no curso.</p>
+                                <p class="uk-text-justify">Meu primeiro site, feito somente com html e css, o intuito era colocar em prática tudo aprendidono no curso.</p>
                             </div>
                         </div>
                     </li>
@@ -143,7 +100,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">TheNet</h3>
-                                <p>Site sobre filmes e séries, criado para a prática do curso, totalmente desenvolvido em PHP puro.</p>
+                                <p class="uk-text-justify">Site sobre filmes e séries, criado para a prática do curso, totalmente desenvolvido em PHP puro.</p>
                             </div>
                         </div>
                     </li>
@@ -154,7 +111,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">UserNet</h3>
-                                <p>Sistema de login com vários tipos de segurança aplicada, prática do curso, totalmente desenvolvido em PHP puro.</p>
+                                <p class="uk-text-justify">Sistema de login com vários tipos de segurança aplicada, prática do curso, totalmente desenvolvido em PHP puro.</p>
                             </div>
                         </div>
                     </li>
@@ -165,7 +122,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">DevilWheels - Unity</h3>
-                                <p>Projeto da faculdade criado na Unity, botando em prática o desenvolvimento de games e usando a linguagem C#.</p>
+                                <p class="uk-text-justify">Projeto da faculdade criado na Unity, botando em prática o desenvolvimento de games e usando a linguagem C#.</p>
                             </div>
                         </div>
                     </li>
@@ -176,7 +133,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <h3 class="uk-card-title">Labirinto 3D - Unity</h3>
-                                <p>Projeto desenvolvido nas férias com o intuito de aprender mais sobre a plataforma Unity e a linguagem C#.</p>
+                                <p class="uk-text-justify">Projeto desenvolvido nas férias com o intuito de aprender mais sobre a plataforma Unity e a linguagem C#.</p>
                             </div>
                         </div>
                     </li>
@@ -197,8 +154,8 @@
     <div class="uk-container uk-container-large">
 
         <h2 class="uk-text-center uk-margin-large">Tecnologias</h2>
-        <div class="uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match" uk-grid>
-            <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-margin-large-bottom" uk-grid>
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -210,7 +167,6 @@
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-sa"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-salesforce" uk-toggle>Ver mais</a>
@@ -236,18 +192,17 @@
                 </div>
 
             </div>
-            <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="imagens/Laravel.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Laravel</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">Laravel</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-l"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-laravel" uk-toggle>Ver mais</a>
@@ -262,7 +217,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/Laravel.png">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Laravel</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">Laravel</h4>
                                 </div>
                             </div>
                         </div>
@@ -273,23 +228,22 @@
                 </div>
             </div>
 
-            <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="imagens/java.jpg">
+                            <img class="uk-border-circle" width="56" height="56" src="imagens/java.jpg">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Java</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">Java</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
-                        <div class="progress-j"></div>
+                        <div class="progress-l"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-java" uk-toggle>Ver mais</a>
                 </div>
-
+            
                 <div id="modal-java" uk-modal>
                     <div class="uk-modal-dialog">
                         <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -299,7 +253,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/java.jpg">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Java</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">Java</h4>
                                 </div>
                             </div>
                         </div>
@@ -310,18 +264,17 @@
                 </div>
             </div>
 
-            <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="imagens/wordpress.webp">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">WordPress</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">WordPress</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-wo"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-word" uk-toggle>Ver mais</a>
@@ -336,7 +289,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/wordpress.webp">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">WordPress</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">WordPress</h4>
                                 </div>
                             </div>
                         </div>
@@ -347,19 +300,19 @@
                 </div>
             </div>
         </div>
-        <div class="uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match" uk-grid>
-            <div class="uk-animation-toggle" tabindex="0">
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-margin-small-bottom" uk-grid>
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="imagens/unity.jpg">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Unity</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">Unity</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-un"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-unity" uk-toggle>Ver mais</a>
@@ -374,7 +327,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/unity.jpg">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Unity</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">Unity</h4>
                                 </div>
                             </div>
                         </div>
@@ -385,18 +338,17 @@
                 </div>
             </div>
 
-            <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="imagens/js.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">JavaScript</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">JavaScript</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-js"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-js" uk-toggle>Ver mais</a>
@@ -411,7 +363,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/js.png">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">JavaScript</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">JavaScript</h4>
                                 </div>
                             </div>
                         </div>
@@ -422,18 +374,17 @@
                 </div>
             </div>
 
-            <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="imagens/html.jpg">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">HTML</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">HTML</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-html"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-html" uk-toggle>Ver mais</a>
@@ -448,7 +399,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/html.jpg">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">HTML</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">HTML</h4>
                                 </div>
                             </div>
                         </div>
@@ -459,18 +410,17 @@
                 </div>
             </div>
 
-            <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-toggle uk-height-small" tabindex="0">
                 <div class="uk-card uk-card-hover uk-card-default uk-card-body">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="imagens/css.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">CSS</h3>
+                            <h4 class="uk-text-normal uk-margin-remove-bottom">CSS</h4>
                         </div>
                     </div>
                     <div class="uk-margin-small-top">
-                        <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom">Conhecimento</p>
                         <div class="progress-css"></div>
                     </div>
                     <a class="vermais-decoration" href="#modal-css" uk-toggle>Ver mais</a>
@@ -485,7 +435,7 @@
                                     <img class="uk-border-circle" width="40" height="40" src="imagens/css.png">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">CSS</h3>
+                                    <h4 class="uk-text-normal uk-margin-remove-bottom">CSS</h4>
                                 </div>
                             </div>
                         </div>
@@ -496,8 +446,8 @@
                 </div>
             </div>
         </div>
-        <div class="uk-margin-remove-bottom" style="float: right;">
-            <p class="uk-margin-remove-bottom uk-margin-top">Outras tecnologias</p>
+        <div class="uk-margin-small-top" style="float: right;">
+            <p class="uk-margin-remove-bottom uk-margin-top uk-text-right">Outras tecnologias</p>
             <img class="uk-border-circle" width="25" height="25" src="imagens/python.jpg">
             <img class="uk-border-circle" width="25" height="25" src="imagens/mysql.png">
             <img class="uk-border-circle" width="25" height="25" src="imagens/react.png">
@@ -511,11 +461,11 @@
     </div>
 </div>
 
-<div id="cursos" class="uk-section uk-section-muted">
+<div id="cursos" class="uk-section uk-section-muted uk-padding-remove-top">
     <div class="uk-container uk-container-large">
 
-        <h2 class="uk-text-center uk-margin-remove-top uk-margin-remove-bottom">Cursos</h2>
-        <h5 class="uk-text-center uk-margin-remove-top uk-margin-medium-bottom">Habilidades</h5>
+        <h2 class="uk-text-center uk-margin-remove-bottom">Cursos</h2>
+        <h5 class="uk-text-center uk-margin-remove-top uk-margin-medium-bottom">Treinamentos</h5>
 
         <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid>
 
@@ -581,7 +531,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="uk-accordion-title" href="#">Curso de Salesforce - C3C</a>
+                        <a class="uk-accordion-title" href="#">Treinamento Salesforce - C3C</a>
                         <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
                             <div class="uk-width-1-2">
                                 <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">C3C Software</p>
@@ -655,7 +605,8 @@
         </div>
     </div>
     <a id="uk-totop" href="" uk-totop></a>
-    <p style="text-align: center;">Criado por Daniel Alves | 2022</p>
+    <p class="uk-text-uppercase uk-margin-remove-bottom" style="text-align: center; font-size: 12px;">© 2022 - Daniel Rodrigues Alves</p>
+    <p class="uk-text-uppercase uk-margin-remove-top" style="text-align: center; font-size: 11px;">Todos os direitos reservados</p>
 </div>
 
 </body>
@@ -663,82 +614,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 <script src="js/jQuery.rProgressbar.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
-<script>
-
-  AOS.init();
-
-  function checkScroll(){
-    var startY = $('.uk-navbar-container').height() * 3; //The point where the navbar changes in px
-
-    if($(window).scrollTop() > startY){
-        $('.uk-navbar-container').addClass("scrolled");
-    }else{
-        $('.uk-navbar-container').removeClass("scrolled");
-    }
-}
-
-if($('.uk-navbar-container').length > 0){
-    $(window).on("scroll load resize", function(){
-        checkScroll();
-    });
-}
-
-$(window).fadeThis();
- 
-
-  const clipboard = new ClipboardJS('#texto')
-
-    clipboard.on('success');
-
-    clipboard.on('error');
- 
-$('.progress-sa').rProgressbar({
-    percentage: 30,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#8B90C1'
-});
-$('.progress-l').rProgressbar({
-    percentage: 30,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#EF3125'
-});
-$('.progress-j').rProgressbar({
-    percentage: 45,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#DC2F31'
-});
-$('.progress-wo').rProgressbar({
-    percentage: 50,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#ECCC57'
-});
-$('.progress-un').rProgressbar({
-    percentage: 35,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#000'
-});
-$('.progress-js').rProgressbar({
-    percentage: 65,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#E4DA21'
-});
-$('.progress-html').rProgressbar({
-    percentage: 80,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#EF5727'
-});
-$('.progress-css').rProgressbar({
-    percentage: 50,
-    borderRadius: '5px',
-    height: '8px',
-    fillBackgroundColor: '#38ABDB'
-});
-</script>
+<script src="js/main.js"></script>
 </html>
