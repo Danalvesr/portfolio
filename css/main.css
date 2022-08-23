@@ -1,14 +1,16 @@
 html{
     background-color: #000;
 }
-body, .uk-animation-toggle, .uk-modal-body, h2,h3,h4,h5,p{
-    font-family: "Segoe UI Symbol";
+body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
+    font-family: 'Times New Roman', Times, serif;
 }
-.uk-navbar-nav > li:hover{
+.menu-home:hover{
     background-color: #D3D3D3;
 }
-.uk-navbar-nav > li > a{
+.menu-home{
     color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
 }
 .uk-navbar-container.scrolled {
     background: #000;
@@ -31,4 +33,15 @@ body, .uk-animation-toggle, .uk-modal-body, h2,h3,h4,h5,p{
 .vermais-decoration{
     text-decoration: none !important;
     color: gray;
+}
+.uk-panel{
+    color: #fff;
+}
+.uk-panel > h4{
+    color: #fff; 
+    font-weight: 600;
+}
+.uk-panel > p{
+    text-indent:2em;
+    font-size: 16px;
 }
