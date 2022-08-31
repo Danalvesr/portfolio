@@ -12,19 +12,33 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
 }
+.projects-card > li > .uk-card{
+    border-radius: 8px;
+}
+.projects-card > li > .uk-card > .uk-card-media-top > img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.tecnologias-card > .uk-animation-toggle > .uk-card{
+    border-radius: 8px;
+}
+.modal-tecnologia > .uk-modal-dialog {
+    border-radius: 8px;
+}
+.modal-tecnologia > .uk-modal-dialog > .uk-modal-header{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 .uk-navbar-container.scrolled {
     background: #000;
     opacity: 1; 
 }
+#tecnologias, #cursos{
+    background-color: #DCDCDC;
+}
 .card-ini{
     color: #fff;
     font-size: 25px;
-}
-.projects > .uk-card{
-    background-color: #000;
-}
-.projects > .uk-card:hover{
-    background-color: #000;
 }
 #uk-totop{
     float: right;

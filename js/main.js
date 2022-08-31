@@ -26,13 +26,13 @@ $(window).fadeThis();
     clipboard.on('error');
  
 $('.progress-sa').rProgressbar({
-    percentage: 30,
+    percentage: 35,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#8B90C1'
 });
 $('.progress-l').rProgressbar({
-    percentage: 30,
+    percentage: 25,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#EF3125'
@@ -44,7 +44,7 @@ $('.progress-j').rProgressbar({
     fillBackgroundColor: '#DC2F31'
 });
 $('.progress-wo').rProgressbar({
-    percentage: 50,
+    percentage: 35,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#ECCC57'
@@ -56,7 +56,7 @@ $('.progress-un').rProgressbar({
     fillBackgroundColor: '#000'
 });
 $('.progress-js').rProgressbar({
-    percentage: 65,
+    percentage: 55,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#E4DA21'
