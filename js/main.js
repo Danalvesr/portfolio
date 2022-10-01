@@ -18,12 +18,6 @@ if($('.uk-navbar-container').length > 0){
 
 $(window).fadeThis();
  
-
-  const clipboard = new ClipboardJS('#texto')
-
-    clipboard.on('success');
-
-    clipboard.on('error');
  
 $('.progress-sa').rProgressbar({
     percentage: 35,

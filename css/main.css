@@ -49,13 +49,15 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     color: gray;
 }
 .uk-panel{
-    color: #fff;
+    color: #000;
+    background-color: #fff;
+    border-radius: 7px; 
+    padding: 10px 10px 10px 15px;
 }
-.uk-panel > h4{
-    color: #fff; 
+.uk-panel > div > h4{
     font-weight: 600;
 }
-.uk-panel > p{
+.uk-panel > div >  p{
     text-indent:2em;
     font-size: 16px;
 }
