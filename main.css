@@ -1,0 +1,63 @@
+html{
+    background-color: #000;
+}
+body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu-home:hover{
+    background-color: #D3D3D3;
+}
+.menu-home{
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects-card > li > .uk-card{
+    border-radius: 8px;
+}
+.projects-card > li > .uk-card > .uk-card-media-top > img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.tecnologias-card > .uk-animation-toggle > .uk-card{
+    border-radius: 8px;
+}
+.modal-tecnologia > .uk-modal-dialog {
+    border-radius: 8px;
+}
+.modal-tecnologia > .uk-modal-dialog > .uk-modal-header{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.uk-navbar-container.scrolled {
+    background: #000;
+    opacity: 1; 
+}
+#tecnologias, #cursos{
+    background-color: #DCDCDC;
+}
+.card-ini{
+    color: #fff;
+    font-size: 25px;
+}
+#uk-totop{
+    float: right;
+    margin-right: 1.5rem;
+}
+.vermais-decoration{
+    text-decoration: none !important;
+    color: gray;
+}
+.uk-panel{
+    color: #000;
+    background-color: #fff;
+    border-radius: 7px; 
+    padding: 10px 10px 10px 15px;
+}
+.uk-panel > div > h4{
+    font-weight: 600;
+}
+.uk-panel > div >  p{
+    text-indent:2em;
+    font-size: 16px;
+}
