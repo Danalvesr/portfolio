@@ -5,56 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <link rel="icon" type="image/png" href="imagens/favicon.png"/>
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
     <script src="js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body style="background-color: #000;">
 
-<div class="uk-section">
-    <div class="uk-container uk-container-small">
+<div class="uk-section uk-padding-remove-top">
+    <div class="uk-container uk-container-large">
         <nav class="uk-navbar-container uk-margin-remove-top" uk-navbar style="background-color: #000;">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
-                    <li><a href="index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-arrow-left fa-xl"></i></a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="uk-panel">
             <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent uk-border-circle" src="imagens/perfil.jpg" width="225" height="150" alt="Example image">
-            
-                <h4>Daniel Rodrigues Alves</h4>
+            <div>
+                <h4 class="h4">Daniel Rodrigues Alves</h4>
                 <p class="uk-text-justify">A idéia do portifólio partiu do princípio que preciso demonstrar meus talentos, habilidades e projetos que já desenvolvi nesse tempo que tenho na área de tecnologia. 
-                    Tudo aqui é pensado para você saber o máximo do meu conhecimento nessa área e poder me conhecer melhor.</p>
-                <p class="uk-text-justify">Tenho 21 anos, estou por dentro dessa área de T.I a uns 5 anos, isso desde do início do meu ensino médio. O primeiro contato com manutenção de computadores e com 
+                    Tudo aqui é pensado para você saber o máximo do meu conhecimento nessa área e poder me conhecer melhor.
+                    Tenho 21 anos e estou por dentro dessa área de T.I a uns 5 anos, isso desde do início do meu ensino médio. O primeiro contato com manutenção de computadores e com 
                     desenvolvimento de softwares começou no ensino médio, mas desde de criança tenho apego por "coisas" tecnológicas, por exemplo: brinquedos, celulares e etc. Sempre 
-                    tive curiosidade de saber como essas e outras tecnologias funcionavam, como eram criadas e quem as criou, e partindo daí veio a minha vontade de explorar esse mundo.</p>
-                <h4>Habilidades Pessoais</h4>
-                <div class="uk-child-width-expand@s" uk-grid>
+                    tive curiosidade de saber como essas e outras tecnologias funcionavam, como eram criadas e quem as criou, e partindo daí veio a minha vontade de explorar esse mundo.
+                </p>
+                <p class="uk-text-justify">
+                    Consigo aprender muito rápido, então se me perguntam se conheço algo e não conheço, trato logo de pesquisar e aprender no minimo o básico daquilo em questão. Tenho foco
+                    nas minhas atividades, então sempre vou buscar terminar logo meus afazeres, assim tenho tempo livre para iniciar outra atividade ou estudar. Sou responsável com meu trabalho
+                    e com minhas atividades, gosto de organização e dessa forma sou mais produtivo.
+                </p>
+            </div>
+            <div class="uk-child-width-expand@s uk-text-justify" uk-grid>
+                <div>
+                    <h4 class="h4">Formação Acadêmica</h4>
+                    <dl class="uk-description-list uk-description-list-divider">
+                        <dt>UniFametro</dt>
+                        <dd class="dt-dd">Tecnólogo, Análise e desenvolvimento de sistemas</dd>
+                        <dd>ago de 2021 - 2023</dd>
+                        <dt>Fatene - Faculdade de Tecnologia do Nordeste</dt>
+                        <dd class="dt-dd">Tecnólogo, Análise e desenvolvimento de sistemas</dd>
+                        <dd>fev de 2020 - jun de 2021</dd>
+                        <dt>EEEP Paulo Petrola</dt>
+                        <dd class="dt-dd">Curso Técnico Integrado, Tecnologia da Informação</dd>
+                        <dd>fev de 2017 - nov de 2019</dd>
+                    </dl>
+                    
+                </div>
+                
+                <div>
+                    <h4 class="h4">Habilidades Pessoais</h4>
                     <div>
-                        <ul class="uk-list">
-                            <li>Focado</li>
-                            <li>Trabalhar em equipe</li>
-                            <li>Aprende rápido</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="uk-list">
-                            <li>Proativo</li>
-                            <li>Adaptabilidade</li>
-                            <li>Autoconhecimento</li>
+                        <ul class="uk-list uk-column-1-2">
+                            <div uk-grid>
+                                <i class="fa-solid fa-arrows-to-eye"></i>
+                                <li>Focado</li>
+                            </div>
+                            <div uk-grid>
+                                <i class="fa-sharp fa-solid fa-people-group"></i>
+                                <li>Trabalha em equipe</li>
+                            </div>
+                            <div uk-grid>
+                                <i class="fa-brands fa-leanpub"></i>
+                                <li>Aprende rápido</li>
+                            </div>
+                            <div uk-grid>
+                                <i class="fa-solid fa-person-running"></i>
+                                <li>Proativo</li>
+                            </div>
+                            <div uk-grid>
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <li>Adaptável</li>
+                            </div>
+                            <div uk-grid>
+                                <i class="fa-solid fa-book-atlas"></i>
+                                <li>Autoconhecimento</li>
+                            </div>
                         </ul>
                     </div>
                 </div>
-            
+            </div>
         </div>
     </div>
 </div>
-<div style="position: relative; height: 337px;">
-    <div class="uk-section-secondary" style ="bottom: 0px; width: 100%; height: 180px; position: absolute;">
+<div class="footer-sobre">
+    <div class="uk-section-secondary">
         <div class="uk-position-center">
             <div style="justify-content: center" class="uk-dividir-vertical" uk-grid>
                     <div>

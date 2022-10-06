@@ -1,5 +1,6 @@
-html{
-    background-color: #000;
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     font-family: 'Times New Roman', Times, serif;
@@ -11,6 +12,15 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     color: white;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
+}
+#ancora-projetos, #ancora-tecnologias, #ancora-cusros{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -100px;
+    background-color: transparent;
+    z-index: -1;
 }
 .projects-card > li > .uk-card{
     border-radius: 8px;
@@ -29,12 +39,8 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-.uk-navbar-container.scrolled {
-    background: #000;
-    opacity: 1; 
-}
-#tecnologias, #cursos{
-    background-color: #DCDCDC;
+.colorBackground{
+    background-color: 	#CFCFCF;
 }
 .card-ini{
     color: #fff;
@@ -54,10 +60,28 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     border-radius: 7px; 
     padding: 10px 10px 10px 15px;
 }
-.uk-panel > div > h4{
+.h4{
+    font-size: 20px;
     font-weight: 600;
 }
 .uk-panel > div >  p{
+    margin-right: 5px;
     text-indent:2em;
-    font-size: 16px;
+    font-size: 18px;
+}
+.uk-list > div > div > i{
+    font-size: 18px;
+}
+.footer-sobre{
+    position: relative;
+    height: 203px;
+}
+.footer-sobre > .uk-section-secondary{
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.dt-dd {
+    font-weight: bold;
 }
