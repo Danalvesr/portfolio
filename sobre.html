@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body style="background-color: #000;">
 
 <div class="uk-section uk-padding-remove-top">
-    <div class="uk-container uk-container-large">
+    <div class="uk-container uk-container-large uk-padding-large uk-padding-remove-top">
         <nav class="uk-navbar-container uk-margin-remove-top" uk-navbar style="background-color: #000;">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
@@ -25,23 +23,27 @@
         </nav>
 
         <div class="uk-panel">
-            <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent uk-border-circle" src="imagens/perfil.jpg" width="225" height="150" alt="Example image">
-            <div>
-                <h4 class="uk-text-center uk-text-large uk-margin-small-top">Daniel Rodrigues Alves</h4>
-                <p class="uk-text-justify">A idéia do portifólio partiu do princípio que preciso demonstrar meus talentos, habilidades e projetos que já desenvolvi nesse tempo que tenho na área de tecnologia. 
-                    Tudo aqui é pensado para você saber o máximo do meu conhecimento nessa área e poder me conhecer melhor.
-                    Tenho 21 anos e estou por dentro dessa área de T.I a uns 5 anos, isso desde do início do meu ensino médio. O primeiro contato com manutenção de computadores e com 
-                    desenvolvimento de softwares começou no ensino médio, mas desde de criança tenho apego por "coisas" tecnológicas, por exemplo: brinquedos, celulares e etc. Sempre 
-                    tive curiosidade de saber como essas e outras tecnologias funcionavam, como eram criadas e quem as criou, e partindo daí veio a minha vontade de explorar esse mundo.
-                </p>
-                <p class="uk-text-justify">
-                    Consigo aprender muito rápido, então se me perguntam se conheço algo e não conheço, trato logo de pesquisar e aprender no minimo o básico daquilo em questão. Tenho foco
-                    nas minhas atividades, então sempre vou buscar terminar logo meus afazeres, assim tenho tempo livre para iniciar outra atividade ou estudar. Sou responsável com meu trabalho
-                    e com minhas atividades, gosto de organização e dessa forma sou mais produtivo.
-                </p>
+            <div uk-grid>
+                <div class="uk-width-auto@m uk-margin-small-top uk-margin-small-left uk-padding-remove">
+                    <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent uk-border-circle" src="imagens/perfil.jpg" width="225" height="150" alt="Example image">
+                </div>
+                <div class="uk-width-expand@m">
+                    <h4 class="uk-text-justify uk-text-large uk-margin-small-top">Daniel Rodrigues Alves</h4>
+                    <p class="uk-text-justify p-panel">A idéia do portifólio partiu do princípio que preciso demonstrar meus talentos, habilidades e projetos que já desenvolvi nesse tempo que tenho na área de tecnologia. 
+                        Tudo aqui é pensado para você saber o máximo do meu conhecimento nessa área e poder me conhecer melhor.
+                        Tenho 21 anos e estou por dentro dessa área de T.I a uns 5 anos, isso desde do início do meu ensino médio. O primeiro contato com manutenção de computadores e com 
+                        desenvolvimento de softwares começou no ensino médio, mas desde de criança tenho apego por "coisas" tecnológicas, por exemplo: brinquedos, celulares e etc. Sempre 
+                        tive curiosidade de saber como essas e outras tecnologias funcionavam, como eram criadas e quem as criou, e partindo daí veio a minha vontade de explorar esse mundo.
+                    </p>
+                    <p class="uk-text-justify p-panel">
+                        Consigo aprender muito rápido, então se me perguntam se conheço algo e não conheço, trato logo de pesquisar e aprender no minimo o básico daquilo em questão. Tenho foco
+                        nas minhas atividades, então sempre vou buscar terminar logo meus afazeres, assim tenho tempo livre para iniciar outra atividade ou estudar. Sou responsável com meu trabalho
+                        e com minhas atividades, gosto de organização e dessa forma sou mais produtivo.
+                    </p>
+                </div>
             </div>
             <div class="uk-child-width-expand@s uk-text-justify" uk-grid>
-                <div>
+                <div class="uk-margin-small-left">
                     <h4 class="h4 uk-heading-line"><span>Formação Acadêmica</span></h4>
                     <dl class="uk-description-list uk-description-list-divider">
                         <dt>UniFametro</dt>
@@ -54,39 +56,55 @@
                         <dd class="dt-dd">Curso Técnico Integrado, Tecnologia da Informação</dd>
                         <dd>fev de 2017 - nov de 2019</dd>
                     </dl>
-                    
                 </div>
                 
-                <div>
+                <div class="uk-margin-small-left">
                     <h4 class="h4 uk-heading-line"><span>Habilidades Pessoais</span></h4>
-                    <div>
-                        <ul class="uk-list uk-column-1-2">
-                            <div uk-grid>
-                                <i class="fa-solid fa-arrows-to-eye uk-padding-remove-left uk-margin-small-left"></i>
-                                <li class="uk-padding-remove uk-margin-small-left">Focado</li>
-                            </div>
-                            <div uk-grid>
-                                <i class="fa-sharp fa-solid fa-people-group uk-padding-remove-left uk-margin-small-left"></i>
-                                <li class="uk-padding-remove uk-margin-small-left">Equipe</li>
-                            </div>
-                            <div uk-grid>
-                                <i class="fa-brands fa-leanpub uk-padding-remove-left uk-margin-small-left"></i>
-                                <li class="uk-padding-remove uk-margin-small-left">Aprende rápido</li>
-                            </div>
-                            <div uk-grid>
-                                <i class="fa-solid fa-person-running uk-padding-remove-left uk-margin-small-left"></i>
-                                <li class="uk-padding-remove uk-margin-small-left">Proativo</li>
-                            </div>
-                            <div uk-grid>
-                                <i class="fa-solid fa-puzzle-piece uk-padding-remove-left uk-margin-small-left"></i>
-                                <li class="uk-padding-remove uk-margin-small-left">Adaptável</li>
-                            </div>
-                            <div uk-grid>
-                                <i class="fa-solid fa-comment-dots uk-padding-remove-left uk-margin-small-left"></i>
-                                <li class="uk-padding-remove uk-margin-small-left">Diplomata</li>
-                            </div>
-                        </ul>
-                    </div>
+                    <ul class="uk-list uk-column-1-2">
+                        <div uk-grid>
+                            <i class="fa-solid fa-arrows-to-eye uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Focado</li>
+                        </div>
+                        <div uk-grid>
+                            <i class="fa-sharp fa-solid fa-people-group uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Equipe</li>
+                        </div>
+                        <div uk-grid>
+                            <i class="fa-brands fa-leanpub uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Aprende rápido</li>
+                        </div>
+                        <div uk-grid>
+                            <i class="fa-solid fa-person-running uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Proativo</li>
+                        </div>
+                        <div uk-grid>
+                            <i class="fa-solid fa-puzzle-piece uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Adaptável</li>
+                        </div>
+                        <div uk-grid>
+                            <i class="fa-solid fa-comment-dots uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Diplomata</li>
+                        </div>
+                        <div uk-grid>
+                            <i class="fa-sharp fa-solid fa-clock uk-padding-remove-left uk-margin-small-left"></i>
+                            <li class="uk-padding-remove uk-margin-small-left">Assíduo</li>
+                        </div>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="uk-child-width-expand@s uk-text-justify" uk-grid>
+                <div class="uk-margin-small-left">
+                    <h4 class="h4 uk-heading-line"><span>Experiência Profissional</span></h4>
+                    <dl class="uk-description-list uk-description-list-divider">
+                        <dt>ICC Biolabs</dt>
+                        <dd class="dt-dd">Desenvolvedor Web - Estágio</dd>
+                        <dd>Duração: 4 meses - Ano: 2019</dd>
+                        <dt>Sigma Home School</dt>
+                        <dd class="dt-dd">Técnico de informática - Estágio</dd>
+                        <dd>Duração: 10 meses - Ano: 2020 - 2021</dd>
+                    </dl>
+                    
                 </div>
             </div>
         </div>
@@ -117,4 +135,6 @@
     </div>
 </div>
 </body>
+<script src="js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>

@@ -2,6 +2,9 @@ html {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+body{
+    background-color: #CFCFCF;
+}
 body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     font-family: 'Times New Roman', Times, serif;
 }
@@ -39,9 +42,6 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-.colorBackground{
-    background-color: 	#CFCFCF;
-}
 .card-ini{
     color: #fff;
     font-size: 25px;
@@ -61,11 +61,11 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     padding: 10px 10px 10px 15px;
 }
 .h4{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
-.uk-panel > div >  p{
-    margin-right: 5px;
+.p-panel{
+    margin-right: 15px;
     text-indent:2em;
     font-size: 18px;
 }
@@ -74,12 +74,12 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
 }
 .footer-sobre{
     position: relative;
-    height: 203px;
+    height: 170px;
 }
 .footer-sobre > .uk-section-secondary{
     bottom: 0px;
     width: 100%;
-    height: 200px;
+    height: 170px;
     position: absolute;
 }
 .dt-dd {
