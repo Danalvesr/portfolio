@@ -6,7 +6,7 @@ body{
     background-color: #CFCFCF;
 }
 body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
 .menu-home:hover{
     background-color: #D3D3D3;
@@ -14,7 +14,7 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
 .menu-home{
     color: white;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
 #ancora-projetos, #ancora-tecnologias, #ancora-cusros{
     position: absolute;
