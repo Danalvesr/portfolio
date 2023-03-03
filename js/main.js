@@ -17,8 +17,21 @@ if($('.uk-navbar-container').length > 0){
 }
 
 $(window).fadeThis();
- 
- 
+
+$(".btn-vermais").click(function(){
+    $(".btn-vermais").css("display","none");
+    $(".vm-card").css("display","block");
+    $(".btn-vermenos").css("display","block");
+})
+
+$(".btn-vermenos").click(function(){
+    $(".btn-vermenos").css("display","none");
+    $(".vm-card").css("display","none");
+    $(".btn-vermais").css("display","block");
+    $("a.menu-home").prop('href', '#ancora-projetos');
+    $("a.menu-home")[0].click();
+})
+
 $('.progress-sa').rProgressbar({
     percentage: 35,
     borderRadius: '5px',

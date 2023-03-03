@@ -25,12 +25,33 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     background-color: transparent;
     z-index: -1;
 }
-.projects-card > li > .uk-card{
+.projects-card > .uk-card{
+    width: 300px;
+    height: 300px;
     border-radius: 8px;
 }
-.projects-card > li > .uk-card > .uk-card-media-top > img{
+.projects-card > .uk-card > .uk-card-body{
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.projects-card > .uk-card > .uk-card-body > .uk-card-title{
+    margin-bottom: 15px;
+}
+.projects-card > .uk-card > .uk-card-body > .uk-text-justify{
+    margin-top: 15px;
+}
+.projects-card > .uk-card > .uk-card-media-top > img{
+    width: 300px;
+    height: 170px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+.vm-card{
+    display: none;
+}
+.btn-vermenos{
+    display: none;
 }
 .tecnologias-card > .uk-animation-toggle > .uk-card{
     border-radius: 8px;
