@@ -28,8 +28,6 @@ $(".btn-vermenos").click(function(){
     $(".btn-vermenos").css("display","none");
     $(".vm-card").css("display","none");
     $(".btn-vermais").css("display","block");
-    $("a.menu-home").prop('href', '#ancora-projetos');
-    $("a.menu-home")[0].click();
 })
 
 $('.progress-sa').rProgressbar({
