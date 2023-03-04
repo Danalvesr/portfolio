@@ -26,6 +26,7 @@ $(".btn-vermais").click(function(){
 
 $(".btn-vermenos").click(function(){
     $(".btn-vermenos").css("display","none");
+    $("html, body").animate({ scrollTop: $(".btn-vermais").offset().top-70 }, 1);
     $(".vm-card").css("display","none");
     $(".btn-vermais").css("display","block");
 })
