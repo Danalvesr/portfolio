@@ -12,12 +12,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
     <div class="uk-container uk-container-xlarge">
         
+        <div id="projetos">
 
+        </div>
+        <script>
+            let divProjetos = document.querySelector("#projetos");
+
+            let dadosPuros = JSON.parse(`
+            {
+                "projetos": [
+                    {
+                        "titulo": "Teste",
+                        "descricao": "Somente um teste por enquanto",
+                        "imagem": "imagens/c3c.png"
+                    },
+                    {
+                        "titulo": "Teste2",
+                        "descricao": "Somente um teste por enquanto 2",
+                        "imagem": "imagens/css.png"
+                    }
+                ]
+            }
+            `);
+
+            // fetch(dadosPuros).then((response) => {
+            //     response.json().then((dados) => {
+                    dadosPuros.projetos.map((projeto) => {
+                        divProjetos.innerHTML  += `<div>
+                            <div class="projects-card uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <img src="${projeto.imagem}" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">${projeto.titulo}</h3>
+                                    <p>${projeto.descricao}</p>
+                                </div>
+                            </div>
+                        </div>`
+                    })
+            //     })
+            // })
+        </script>
 
 
 
