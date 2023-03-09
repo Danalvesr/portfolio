@@ -41,7 +41,7 @@ $(document).ready(() => {
             },
             {
                 "titulo": "BancoTech",
-                "descricao": "Sistema de gerenciamento de finanças, possui o CRUD e foi totalmente desenvolvido em PHP puro.",
+                "descricao": "Sistema de gerenciamento de finanças, possui o CRUD e foi desenvolvido em PHP puro.",
                 "imagem": "imagens/bancotech.webp",
                 "vmcard": "vm-card",
                 "tecnologia": "PHP"
