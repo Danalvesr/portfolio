@@ -78,3 +78,9 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
 .dt-dd {
     font-weight: bold;
 }
+
+@media (max-width: 640px) {
+    .list-skills-column {
+        column-count: 2;
+    }
+}
