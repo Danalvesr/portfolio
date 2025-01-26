@@ -26,7 +26,37 @@
     </style>
 </head>
 <body>
-<div class="uk-margin-remove-bottom" uk-sticky="end:sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+<!-- Navbar -->
+<nav class="uk-navbar-container" uk-navbar>
+    <!-- Menu Items -->
+    <div class="uk-navbar-center">
+        <!-- Hidden by default, visible on larger screens -->
+        <ul class="uk-navbar-nav uk-visible@s">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Burger Menu - Visible on small screens -->
+        <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon href="#offcanvas-menu" uk-toggle></a>
+    </div>
+</nav>
+
+<!-- Off-canvas menu for small screens -->
+<div id="offcanvas-menu" uk-offcanvas="mode: slide; overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="uk-margin-remove-bottom" uk-sticky="end:sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; background-color: #000;">
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
@@ -38,7 +68,7 @@
             </ul>
         </div>
     </nav>
-</div>
+</div> -->
 
 <div id="ancora-projetos"></div>
 <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom" style="padding-bottom: 50px;">
