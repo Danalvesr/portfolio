@@ -44,25 +44,25 @@ $('.progress-l').rProgressbar({
     fillBackgroundColor: '#EF3125'
 });
 $('.progress-j').rProgressbar({
-    percentage: 45,
+    percentage: 35,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#DC2F31'
 });
 $('.progress-wo').rProgressbar({
-    percentage: 35,
+    percentage: 20,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#ECCC57'
 });
 $('.progress-un').rProgressbar({
-    percentage: 35,
+    percentage: 20,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#000'
 });
 $('.progress-js').rProgressbar({
-    percentage: 55,
+    percentage: 50,
     borderRadius: '5px',
     height: '8px',
     fillBackgroundColor: '#E4DA21'
