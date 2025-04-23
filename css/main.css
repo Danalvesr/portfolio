@@ -6,15 +6,42 @@ body{
     background-color: #CFCFCF;
 }
 body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.menu-home:hover{
-    background-color: #D3D3D3;
+.uk-navbar-dropdown {
+    width: 100vw !important;  /* Força a ocupar 100% da viewport */
+    left: 0 !important;       /* Alinha à esquerda da tela */
+    padding: 0;               /* Remove espaços internos */
+    box-sizing: border-box;
+    position: fixed !important;
+    top: 100%; /* ou ajuste conforme a altura da sua navbar */
+    z-index: 1000;
 }
-.menu-home{
+/* Deixa a lista de navegação 100% largura e centralizada */
+.uk-navbar-dropdown .uk-nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Cada item ocupa 100% da largura */
+.uk-navbar-dropdown .uk-nav > li {
+    width: 100%;
+    margin: 0;
+}
+
+/* Cada link ocupa toda a linha e centraliza o texto */
+.uk-navbar-dropdown .uk-nav > li > a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
     color: #999999;
-    font-weight: 700;
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.uk-navbar-dropdown .uk-nav > li > a:hover {
+    background-color: #D3D3D3;
 }
 #ancora-projetos, #ancora-tecnologias, #ancora-cusros{
     position: absolute;
