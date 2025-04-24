@@ -43,15 +43,6 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
 .uk-navbar-dropdown .uk-nav > li > a:hover {
     background-color: #D3D3D3;
 }
-#ancora-projetos, #ancora-tecnologias, #ancora-cusros{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    left: 0;
-    margin-top: -100px;
-    background-color: transparent;
-    z-index: -1;
-}
 .projects-card > .uk-card-body > .uk-card-title{
     font-size: 21px;
 }
@@ -74,13 +65,36 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     text-decoration: none !important;
     color: gray;
 }
-#inforPessoais > p{
+.bemVindoText {
+    /* 38ch - Total de caracteres do texto */
+    width: 27ch;
+    /* steps(38) - Mesmo total de caracteres do texto */
+    animation: typing 4s steps(27), pulse .5s step-end infinite alternate; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from  {
+        width: 0;
+    }
+}
+
+@keyframes pulse {
+    50%  {
+        border-color: transparent;
+    }
+}
+/* #inforPessoais > p{
     margin: 0;
 }
 #inforPessoais > p:first-child{
     font-size: 23px;
     font-weight: bold;
-}
+} */
 .uk-panel{
     color: #000;
     background-color: #fff;
