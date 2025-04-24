@@ -7,84 +7,84 @@ $(document).ready(() => {
             {
                 "titulo": "Parking Control - API",
                 "descricao": "API desenvolvida com Spring Boot, PostgreSQL e usando o Postman para realizar os testes de rotas.",
-                "imagem": "imagens/spring.png",
+                "imagem": "imagens/resized-images/spring.png",
                 "vmcard": "",
                 "tecnologia": "Spring"
             },
             {
                 "titulo": "Gêrencia de Eventos",
-                "descricao": "Sistema para criar eventos e adicionar convidados. Desenvolvido em Spring e PostgreSQL.",
-                "imagem": "imagens/spring2.png",
+                "descricao": "Software para criar eventos e adicionar convidados. Criado com Spring e PostgreSQL.",
+                "imagem": "imagens/resized-images/spring2.png",
                 "vmcard": "",
                 "tecnologia": "Spring"
             },
             {
                 "titulo": "CRUD Cliente - API",
-                "descricao": "API para inserir, atualizar, pesquisar e deletar clientes. Desenvolvido com Spring, PostgreSQL e Postman.",
-                "imagem": "imagens/spring.png",
+                "descricao": "API completa para gerenciamento de clientes. Desenvolvido com Spring, PostgreSQL e Postman.",
+                "imagem": "imagens/resized-images/spring.png",
                 "vmcard": "",
                 "tecnologia": "Spring"
             },
             {
                 "titulo": "Desafio C3C - Biblioteca",
-                "descricao": "Projeto desenvolvido no treinamento da empresa C3C Software. Criação de uma biblioteca.",
-                "imagem": "imagens/c3c.png",
+                "descricao": "Projeto desenvolvido em treinamento. Criação de uma biblioteca.",
+                "imagem": "imagens/resized-images/c3c.png",
                 "vmcard": "",
                 "tecnologia": "Salesforce"
             },
             {
                 "titulo": "Automação de Processos",
                 "descricao": "Superbadge - O ponto alto dos meus estudos em salesforce foi ter concluído essa superbadge!",
-                "imagem": "imagens/superbadge.png",
+                "imagem": "imagens/resized-images/superbadge.png",
                 "vmcard": "vm-card",
                 "tecnologia": "Salesforce"
             },
             {
                 "titulo": "BancoTech",
                 "descricao": "Sistema de gerenciamento de finanças, possui o CRUD e foi desenvolvido em PHP puro.",
-                "imagem": "imagens/bancotech.webp",
+                "imagem": "imagens/resized-images/bancotech.webp",
                 "vmcard": "vm-card",
                 "tecnologia": "PHP"
             },
             {
                 "titulo": "Community Manager",
-                "descricao": "Sistema feito para gerenciar setores em uma empresa de tecnologia para saúde. Desenvolvido em Laravel.",
-                "imagem": "imagens/community.webp",
+                "descricao": "Software para gerencia de setores de um hub de tecnologia. Desenvolvido em Laravel.",
+                "imagem": "imagens/resized-images/community.webp",
                 "vmcard": "vm-card",
                 "tecnologia": "Laravel"
             },
             {
                 "titulo": "InforGames",
-                "descricao": "Meu primeiro site, feito somente com html e css, o intuito era colocar em prática tudo aprendidono no curso.",
-                "imagem": "imagens/inforgames.webp",
+                "descricao": "Projeto desenvolvido para colocar em prática as habilidades do curso de informática.",
+                "imagem": "imagens/resized-images/inforgames.webp",
                 "vmcard": "vm-card",
                 "tecnologia": "HTML/CSS"
             },
             {
                 "titulo": "TheNet",
                 "descricao": "Site sobre filmes e séries, criado para a prática do curso, totalmente desenvolvido em PHP puro.",
-                "imagem": "imagens/thenet.webp",
+                "imagem": "imagens/resized-images/thenet.webp",
                 "vmcard": "vm-card",
                 "tecnologia": "PHP"
             },
             {
                 "titulo": "UserNet",
                 "descricao": "Sistema de login com vários tipos de segurança aplicada, totalmente desenvolvido em PHP puro.",
-                "imagem": "imagens/usernet.webp",
+                "imagem": "imagens/resized-images/usernet.webp",
                 "vmcard": "vm-card",
                 "tecnologia": "PHP"
             },
             {
                 "titulo": "DevilWheels",
                 "descricao": "Projeto da faculdade desenvolvido para a prática de games e usando a linguagem C#.",
-                "imagem": "imagens/DevilWheels.png",
+                "imagem": "imagens/resized-images/DevilWheels.png",
                 "vmcard": "vm-card",
                 "tecnologia": "Unity"
             },
             {
                 "titulo": "Labirinto 3D",
-                "descricao": "Projeto desenvolvido nas férias com o intuito de aprender mais sobre a plataforma Unity e a linguagem C#.",
-                "imagem": "imagens/labirinto3d.png",
+                "descricao": "Projeto desenvolvido para aprender mais sobre a plataforma Unity e a linguagem C#.",
+                "imagem": "imagens/resized-images/labirinto3d.png",
                 "vmcard": "vm-card",
                 "tecnologia": "Unity"
             }           
