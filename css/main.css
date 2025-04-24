@@ -137,3 +137,9 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
         column-count: 2;
     }
 }
+.uk-card-body .uk-card-badge{
+    height: 16px;
+    width: auto;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}

@@ -79,3 +79,28 @@ $('.progress-css').rProgressbar({
     height: '8px',
     fillBackgroundColor: '#38ABDB'
 });
+
+function anoAtual(){
+    const anoAtual = new Date().getFullYear();
+    $('.anoAtual').text('© '+ anoAtual +' - Daniel Rodrigues Alves');
+}
+
+function idade() {
+    var d = new Date,
+        ano_atual = d.getFullYear(),
+        mes_atual = d.getMonth() + 1,
+        dia_atual = d.getDate(),
+
+        ano_aniversario = +2001,
+        mes_aniversario = +3,
+        dia_aniversario = +27,
+
+        quantos_anos = ano_atual - ano_aniversario;
+
+    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+        quantos_anos--;
+    }
+
+    let idade = quantos_anos < 0 ? 0 : quantos_anos;
+    $('.idade').html(idade);
+}

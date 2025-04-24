@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="uk-position-relative">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
 
         <nav class="uk-navbar-container" style="background-color: black;">
             <div class="uk-container">
@@ -51,36 +51,6 @@
         </nav>
     
     </div>
-    <!-- <div class="uk-margin-remove-bottom" uk-sticky="end:sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="uk-navbar-container" style="background-color: black;" uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav uk-visible@s">
-                    <li><a class="menu-home" href="#ancora-projetos">Projetos</a></li>
-                    <li><a class="menu-home" href="#ancora-tecnologias">Tecnologias</a></li>
-                    <li><a class="menu-home" href="#ancora-cursos">Cursos</a></li>
-                    <li><a class="menu-home" href="#ancora-salesforce">Salesforce</a></li>
-                    <li><a class="menu-home" href="sobre.html">Sobre</a></li>
-                </ul>
-    
-               
-                <ul class="uk-navbar-nav uk-hidden@s">
-                    <li class="">
-                        <a><span uk-icon="menu"></span></a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a class="menu-home" href="#ancora-projetos">Projetos</a></li>
-                                <li><a class="menu-home" href="#ancora-tecnologias">Tecnologias</a></li>
-                                <li><a class="menu-home" href="#ancora-cursos">Cursos</a></li>
-                                <li><a class="menu-home" href="#ancora-salesforce">Salesforce</a></li>
-                                <li><a class="menu-home" href="sobre.html">Sobre</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div> -->
-
 <div id="ancora-projetos"></div>
 <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom" style="padding-bottom: 50px;">
     <div class="uk-container uk-container-large uk-padding-remove-top">
@@ -656,7 +626,7 @@
         </div>
     </div>
     <i id="uk-totop" class="fa-sharp fa-solid fa-chevron-up fa-xl" uk-scroll></i>
-    <p class="uk-text-uppercase uk-margin-remove-bottom" style="text-align: center; font-size: 12px;">© 2025 - Daniel Rodrigues Alves</p>
+    <p class="uk-text-uppercase uk-margin-remove-bottom anoAtual" style="text-align: center; font-size: 12px;"></p>
     <p class="uk-text-uppercase uk-margin-remove-top" style="text-align: center; font-size: 11px;">Todos os direitos reservados</p>
 </div>
 
@@ -671,4 +641,9 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/projetos.js"></script>
+<script>
+$(document).ready(function() {
+    anoAtual();
+})
+</script>
 </html>

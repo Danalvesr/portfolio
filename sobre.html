@@ -156,7 +156,7 @@
                     </div>
             </div>
             <div style="margin-top: 10px;">
-                <p class="uk-text-uppercase uk-margin-remove-bottom" style="text-align: center; font-size: 12px;">© 2025 - Daniel Rodrigues Alves</p>
+                <p class="uk-text-uppercase uk-margin-remove-bottom anoAtual" style="text-align: center; font-size: 12px;"></p>
                 <p class="uk-text-uppercase uk-margin-remove-top" style="text-align: center; font-size: 11px;">Todos os direitos reservados</p>
             </div>
         </div>
@@ -165,29 +165,11 @@
 </body>
 <script src="js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script>
 $(document).ready(function() {
         idade();
+        anoAtual();
 })
-
-function idade() {
-    var d = new Date,
-        ano_atual = d.getFullYear(),
-        mes_atual = d.getMonth() + 1,
-        dia_atual = d.getDate(),
-
-        ano_aniversario = +2001,
-        mes_aniversario = +3,
-        dia_aniversario = +27,
-
-        quantos_anos = ano_atual - ano_aniversario;
-
-    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
-        quantos_anos--;
-    }
-
-    let idade = quantos_anos < 0 ? 0 : quantos_anos;
-    $('.idade').html(idade);
-}
 </script>
 </html>
