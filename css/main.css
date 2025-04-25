@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #CFCFCF;
+    background-color: #EFEFEF;
 }
 body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -67,9 +67,9 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
 }
 .bemVindoText {
     /* 38ch - Total de caracteres do texto */
-    width: 27ch;
+    width: 36ch;
     /* steps(38) - Mesmo total de caracteres do texto */
-    animation: typing 4s steps(27), pulse .5s step-end infinite alternate; 
+    animation: typing 4s steps(36), pulse .5s step-end infinite alternate; 
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -88,22 +88,11 @@ body, .uk-animation-toggle, .uk-modal-body, .uk-panel, h2,h3,h4,h5,p{
         border-color: transparent;
     }
 }
-/* #inforPessoais > p{
-    margin: 0;
-}
-#inforPessoais > p:first-child{
-    font-size: 23px;
-    font-weight: bold;
-} */
 .uk-panel{
     color: #000;
     background-color: #fff;
     border-radius: 3px; 
     padding: 10px 10px 10px 15px;
-}
-.h4{
-    font-size: 22px;
-    font-weight: 600;
 }
 .p-panel{
     margin-right: 15px;

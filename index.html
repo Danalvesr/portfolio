@@ -14,11 +14,71 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="uk-section uk-padding-remove">
+<!-- Menu completo visível apenas em telas médias ou maiores -->
+<div class="uk-visible@s uk-position-fixed uk-position-center-right uk-padding-small" style="z-index: 999;">
+    <ul class="uk-nav uk-nav-default uk-text-center" uk-nav>
+        <li>
+            <a href="#sobre" uk-tooltip="title: Sobre; pos: left">
+                <img width="24" height="24" src="https://img.icons8.com/ios/50/user--v1.png" alt="user--v1"/>
+            </a>
+        </li>
+        <li>
+            <a href="#experiencia" uk-tooltip="title: Experiência; pos: left">
+                <img width="24" height="24" src="https://img.icons8.com/ios/50/experience-skill.png" alt="experience-skill"/>
+            </a>
+        </li>
+        <li>
+            <a href="#salesforce" uk-tooltip="title: Salesforce; pos: left">
+                <img width="24" height="24" src="https://img.icons8.com/ios/50/cloud--v1.png" alt="cloud--v1"/>
+            </a>
+        </li>
+        <li>
+            <a href="#projetos" uk-tooltip="title: Projetos; pos: left">
+                <img width="24" height="24" src="https://img.icons8.com/ios/50/folder-invoices--v1.png" alt="folder-invoices--v1"/>
+            </a>
+        </li>
+        <li>
+            <a href="#tecnologias" uk-tooltip="title: Tecnologias; pos: left">
+                <img width="24" height="24" src="https://img.icons8.com/ios/50/code--v1.png" alt="code--v1"/>
+            </a>
+        </li>
+        <li>
+            <a href="#cursos" uk-tooltip="title: Cursos; pos: left">
+                <img width="24" height="24" src="https://img.icons8.com/ios/50/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Botão para mobile, agora no topo direito e sem borda branca -->
+<div class="uk-hidden@s uk-position-fixed uk-position-top-right uk-padding-small" style="z-index: 999;">
+    <button class="uk-button uk-button-link uk-light" type="button" uk-toggle="target: #mobile-menu"
+        style="background-color: black; border-radius: 50%; width: 40px; height: 40px;">
+        <span uk-icon="icon: menu; ratio: 1.2"></span>
+    </button>
+
+    <!-- Offcanvas mobile menu -->
+    <div id="mobile-menu" uk-offcanvas="overlay: true; flip: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-secondary uk-light">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-default uk-margin-auto-vertical">
+                <li><a href="#sobre"><img width="24" height="24" src="https://img.icons8.com/ios/50/user--v1.png" alt="user--v1"/>Sobre</a></li>
+                <li><a href="#experiencia"><img width="24" height="24" src="https://img.icons8.com/ios/50/experience-skill.png" alt="experience-skill"/>Expeciência Profissional</a></li>
+                <li><a href="#salesforce"><img width="24" height="24" src="https://img.icons8.com/ios/50/cloud--v1.png" alt="cloud--v1"/>Salesforce</a></li>
+                <li><a href="#projetos"><img width="24" height="24" src="https://img.icons8.com/ios/50/folder-invoices--v1.png" alt="folder-invoices--v1"/>Projetos</a></li>
+                <li><a href="#tecnologias"><img width="24" height="24" src="https://img.icons8.com/ios/50/code--v1.png" alt="code--v1"/>Tecnologias</a></li>
+                <li><a href="#cursos"><img width="24" height="24" src="https://img.icons8.com/ios/50/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>Cursos</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="uk-section uk-padding-remove" style="background-color: white;">
     <!-- Banner -->
-    <div id="banner-profile" class="uk-height-medium uk-background-cover uk-flex uk-flex-center uk-flex-middle" style="background-color: black;">
-        <!-- Banner pode ter texto também se quiser -->
-        <h1 class="uk-light bemVindoText">Bem-vindo ao meu Portifólio</h1>
+    <div id="banner-profile" class="uk-background-cover uk-flex uk-flex-center uk-flex-middle" style="background-color: black; height: 12em;">
     </div>
 
     <!-- Foto centralizada absoluta -->
@@ -32,44 +92,169 @@
      <!-- Nome, Título e Localidade -->
      <div class="uk-section-small uk-text-center uk-padding-small">
         <h2 class="uk-heading-xsmall uk-margin-small-bottom">Daniel Rodrigues Alves</h2>
-        <p class="uk-text-lead uk-text-default uk-margin-remove">Salesforce Developer | Back-end Developer</p>
+        <p class="uk-text-lead uk-text-default uk-margin-remove">Salesforce Developer | Analista de Sistemas</p>
         <p class="uk-text-meta uk-text-default uk-margin-remove-top">Fortaleza - CE</p>
     </div>
 
-        <!-- Descrição dividida em 3 colunas -->
-    <div id="descricao-profile" class="uk-section uk-container uk-padding-remove-top">
-        <div class="uk-grid-match uk-child-width-1-1 uk-child-width-1-3@m uk-text-center" uk-grid>
-            <!-- Formação -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <h3 class="uk-card-title">Formação Acadêmica</h3>
-                    <p>Graduado em X pela Universidade Y. Pós-graduado em Z. Participação em cursos de extensão em áreas como A, B e C.</p>
-                </div>
-            </div>
-
-            <!-- Habilidades Pessoais -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <h3 class="uk-card-title">Habilidades Pessoais</h3>
-                    <p>Proativo, comunicativo, foco em resultados, facilidade com trabalho em equipe. Tecnologias: HTML, CSS, JavaScript, Salesforce, etc.</p>
-                </div>
-            </div>
-
-            <!-- Experiência Profissional -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <h3 class="uk-card-title">Experiência Profissional</h3>
-                    <p>Experiência com desenvolvimento web, projetos Salesforce, UI/UX, integração de APIs. Atuação em projetos com foco em inovação.</p>
-                </div>
+    <!-- Declaração pessoal -->
+    <div class="uk-container uk-margin-large-bottom">
+        <div class="uk-grid">
+            <div class="uk-width-expand@m">
+                <p class="uk-text-justify">
+                    A ideia deste portfólio nasceu do desejo de apresentar meus talentos, habilidades e os projetos que desenvolvi ao longo da minha trajetória na área de tecnologia. 
+                    Tudo foi pensado para que você conheça o máximo sobre meu conhecimento técnico e minha história profissional. Tenho <span class="idade"></span> anos e estou imerso no 
+                    universo da tecnologia há aproximadamente 5 anos.
+                </p>
+                <p class="uk-text-justify">
+                    Ao longo da minha trajetória, tive a oportunidade de participar de projetos desafiadores e relevantes, como o 
+                    desenvolvimento de soluções para a Jit Technology e Boa Safra, melhorias tecnológicas para o Banco Bradesco e iniciativas inovadoras para a Carbel Veículos. Esses projetos não apenas 
+                    consolidaram minhas habilidades, mas também reforçaram meu compromisso com resultados de qualidade e aprendizado constante.
+                </p>
+                <p class="uk-text-justify">
+                    Sou autodidata e aprendo com rapidez. Quando surge algo novo que ainda não conheço, encaro como uma oportunidade de aprendizado e me esforço para dominar pelo menos o básico em pouco tempo. Tenho foco e organização nas minhas atividades, o que me 
+                    ajuda a manter a produtividade alta e garantir entregas dentro dos prazos. Para mim, a tecnologia é mais do que uma profissão: é uma paixão e um desafio constante de evolução. Estou animado 
+                    para compartilhar mais sobre meus conhecimentos e experiências.
+                </p>
             </div>
         </div>
     </div>
+
+    <div id="descricao-profile" class="uk-section uk-container uk-padding-small uk-padding-remove-top">
+
+        <div class="uk-text-center uk-margin-large-bottom">
+            <h3 class="uk-heading-line uk-text-bold"><span>Experiência Profissional</span></h3>
+        </div>
+        
+        <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-small uk-flex-center uk-margin-medium-bottom" uk-grid>
+        
+            <!-- Deloitte -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
+                    <h5 class="uk-margin-remove">Deloitte Digital <span class="uk-badge">Atual</span></h5>
+                    <p class="uk-margin-small uk-text-muted">Salesforce Developer</p>
+                    <p class="uk-margin-remove-top uk-text-meta">Nov/2023<span id="trabalhoAtual"></span></p>
+                </div>
+            </div>
+        
+            <!-- Boa Safra -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
+                    <h5 class="uk-margin-remove">Action</h5>
+                    <p class="uk-margin-small uk-text-muted">Salesforce Developer</p>
+                    <p class="uk-margin-remove-top uk-text-meta">Jun/2023 - Nov/2023</p>
+                </div>
+            </div>
+        
+            <!-- Jit Technology -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
+                    <h5 class="uk-margin-remove">JIT Technology</h5>
+                    <p class="uk-margin-small uk-text-muted">JavaScript Developer</p>
+                    <p class="uk-margin-remove-top uk-text-meta">Mar/2023 - Out/2023</p>
+                </div>
+            </div>
+        
+            <!-- Sigma Home School -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
+                    <h5 class="uk-margin-remove">Sigma Home School</h5>
+                    <p class="uk-margin-small uk-text-muted">Técnico de Informática - Estágio</p>
+                    <p class="uk-margin-remove-top uk-text-meta">Nov/2020 - Out/2021</p>
+                </div>
+            </div>
+        
+            <!-- ICC Biolabs -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
+                    <h5 class="uk-margin-remove">ICC Biolabs</h5>
+                    <p class="uk-margin-small uk-text-muted">Web Developer - Estágio</p>
+                    <p class="uk-margin-remove-top uk-text-meta">Ago/2019 - Nov/2019</p>
+                </div>
+            </div>
+        </div>           
+    
+        <!-- Formação Acadêmica -->
+        <!-- <div class="uk-text-center uk-margin-large-bottom">
+            <h3 class="uk-heading-line uk-text-bold"><span>Formação Acadêmica</span></h3>
+        </div>
+    
+        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-small uk-flex-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <h4 class="uk-card-title">UniFametro</h4>
+                    <p class="uk-text-muted uk-margin-remove-top">Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                    <p class="uk-text-meta">Ago/2021 - Dez/2023</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <h4 class="uk-card-title">EEEP Paulo Petrola</h4>
+                    <p class="uk-text-muted uk-margin-remove-top">Curso Técnico Integrado em Tecnologia da Informação</p>
+                    <p class="uk-text-meta">Fev/2017 - Nov/2019</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div class="uk-section uk-padding-remove-bottom" style="padding-top: 25px;">
+    <div class="uk-container uk-container-large">
+        <div class="uk-text-center">
+            <h3 class="uk-text-bold"><span>Salesforce</span></h3>
+        </div>
+
+        <div class="uk-margin-small-top uk-text-center">
+            <p class="uk-margin-small-bottom uk-margin-top" style="font-weight: bold;">Superbadges</p>
+            <div class="uk-width-auto uk-flex-center uk-margin-remove" uk-grid>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Process Automation Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/processAutomationSpecialist.png"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Business Administration Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/businessAdministrationSpecialist.png"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Lightning Experience Reports & Dashboards Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/lightningExperienceReportsDashboardsSpecialist.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Settings"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAuthenticationSettings.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Multi-Factor Authentication and Single Sign-On Settings"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/multi-FactorAuthenticationAndSingleSign-OnSettings.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Authentication Governance"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/authenticationGovernanceSuperbadgeUnit.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Troubleshooting"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAuthenticationTroubleshootingSuperbadgeUnit.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAuthenticationSpecialistSuperbadge.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Access Governance"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/accessGovernanceSuperbadgeUnit.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Security Governance Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/securityGovernanceSpecialistSuperbadge.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Access Fundamentals"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAccessFundamentalsSuperbadgeUnit.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Access Troubleshooting"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAccessTroubleshootingSuperbadgeUnit.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Apex Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/apexSpecialist.png"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Financial Services Cloud Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/financialServicesCloudSpecialist.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Prompt Builder Templates"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/PromptBuilderTemplatesSuperbadgeUnit.webp"></div>
+                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Agentforce for Service"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/AgentforceforServiceSuperbadgeUnit.webp"></div>
+            </div>
+        </div>
+        <div class="uk-margin-small-top uk-text-center">
+            <p class="uk-margin-small-bottom uk-margin-top" style="font-weight: bold;">Skills</p>
+        
+            <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center uk-text-center" uk-grid>
+                <li>Apex</li>
+                <li>Apex Tests</li>
+                <li>LWC</li>
+                <li>Trigger</li>
+                <li>Flow</li>
+                <li>Approval Process</li>
+                <li>Page Layout</li>
+                <li>Custom Field</li>
+                <li>Email Template</li>
+                <li>Validation Rule</li>
+                <li>Queue</li>
+                <li>Custom Metadata Type</li>
+                <li>API Rest</li>
+                <li>Aura</li>
+                <li>Debugging</li>
+            </ul>
+        </div>        
+        
+    </div>    
 </div>
 
 <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom" style="padding-bottom: 50px;">
     <div class="uk-container uk-container-large uk-padding-remove-top">
 
-        <h2 id="projetosLink" class="uk-text-center uk-margin-large-bottom uk-margin-medium-top">Projetos</h2>
+        <div class="uk-text-center uk-margin-medium-top uk-margin-large-bottom">
+            <h3 class="uk-text-bold"><span>Projetos</span></h3>
+        </div>
 
         <div id="divProjetos" class="uk-grid-medium uk-grid-row-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-flex-center uk-text-center" uk-grid>
             <!-- Cards listados automaticamente por meio da classe projetos.js -->
@@ -85,8 +270,10 @@
 
 <div class="uk-section uk-padding-remove-top" style="padding-bottom: 25px;">
     <div class="uk-container uk-container-large">
+        <div class="uk-text-center uk-margin-large-bottom">
+            <h3 class="uk-text-bold"><span>Tecnologias</span></h3>
+        </div>
 
-        <h2 class="uk-text-center uk-margin-large-bottom">Tecnologias</h2>
         <div class="uk-grid-medium uk-grid-row-large uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-margin-small-bottom tecnologias-card" uk-grid>
             <div>
                 <div class="uk-animation-toggle uk-height-small" tabindex="0">
@@ -425,10 +612,13 @@
         </div>
     </div>
 </div>
-<div class="uk-section uk-padding-remove-bottom" style="padding-top: 25px;">
-    <div class="uk-container uk-container-large">
 
-        <h2 class="uk-text-center uk-margin-remove-bottom">Cursos</h2>
+<div class="uk-section uk-padding-remove-bottom" style="padding-top: 25px;">
+    <div class="uk-container uk-container-large uk-margin-medium-bottom">
+        <div class="uk-text-center">
+            <h3 class="uk-text-bold uk-margin-remove-bottom"><span>Cursos</span></h3>
+        </div>
+
         <h5 class="uk-text-center uk-margin-remove-top uk-margin-large-bottom">Treinamentos</h5>
 
         <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match uk-text-center" uk-grid>
@@ -570,57 +760,6 @@
     </div>
 </div>
 
-<div class="uk-section uk-padding-remove-bottom" style="padding-top: 25px;">
-    <div class="uk-container uk-container-large">
-
-        <h2 class="uk-text-center uk-margin-remove-bottom">Salesforce</h2>
-
-        <div class="uk-margin-small-top uk-text-center">
-            <p class="uk-margin-small-bottom uk-margin-top" style="font-weight: bold;">Superbadges</p>
-            <div class="uk-width-auto uk-flex-center uk-margin-remove" uk-grid>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Process Automation Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/processAutomationSpecialist.png"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Business Administration Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/businessAdministrationSpecialist.png"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Lightning Experience Reports & Dashboards Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/lightningExperienceReportsDashboardsSpecialist.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Settings"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAuthenticationSettings.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Multi-Factor Authentication and Single Sign-On Settings"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/multi-FactorAuthenticationAndSingleSign-OnSettings.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Authentication Governance"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/authenticationGovernanceSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Troubleshooting"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAuthenticationTroubleshootingSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAuthenticationSpecialistSuperbadge.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Access Governance"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/accessGovernanceSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Security Governance Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/securityGovernanceSpecialistSuperbadge.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Access Fundamentals"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAccessFundamentalsSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Access Troubleshooting"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/userAccessTroubleshootingSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Apex Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/apexSpecialist.png"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Financial Services Cloud Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/financialServicesCloudSpecialist.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Prompt Builder Templates"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/PromptBuilderTemplatesSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Agentforce for Service"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/superbadges/AgentforceforServiceSuperbadgeUnit.webp"></div>
-            </div>
-        </div>
-        <div class="uk-margin-small-top uk-text-center">
-            <p class="uk-margin-small-bottom uk-margin-top" style="font-weight: bold;">Skills</p>
-
-            <ul class="uk-list">
-                <div class="uk-column-1-2@s uk-column-1-3@m uk-padding-remove">
-                    <li>Apex</li>
-                    <li>Apex Tests</li>
-                    <li>LWC</li>
-                    <li>Trigger</li>
-                    <li>Flow</li>
-                    <li>Approval Process</li>
-                    <li>Page Layout</li>
-                    <li>Custom Field</li>
-                    <li>Email Template</li>
-                    <li>Validation Rule</li>
-                    <li>Queue</li>
-                    <li>Custom Metadado Type</li>
-                    <li>API Rest</li>
-                    <li>Aura</li>
-                    <li>Debugging</li>
-                </div>
-            </ul>
-        </div>
-    </div>    
-</div>
 <div class="uk-section uk-section-small uk-section-secondary">
     <div class="uk-container">
 
