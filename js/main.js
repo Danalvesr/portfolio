@@ -18,18 +18,23 @@ if($('.uk-navbar-container').length > 0){
 
 $(window).fadeThis();
 
-$(".btn-vermais").click(function(){
-    $(".btn-vermais").css("display","none");
-    $(".vm-card").css("display","block");
-    $(".btn-vermenos").css("display","block");
-})
+let scrollPos = 0; // variável para guardar a posição da tela
 
-$(".btn-vermenos").click(function(){
-    $(".btn-vermenos").css("display","none");
-    $("html, body").animate({ scrollTop: $(".btn-vermais").offset().top-70 }, 1);
-    $(".vm-card").css("display","none");
-    $(".btn-vermais").css("display","block");
-})
+$(".btn-vermais").click(function() {
+    scrollPos = $(window).scrollTop(); // salva a posição atual da tela
+    $(".btn-vermais").css("display", "none");
+    $(".vm-card").css("display", "block");
+    $(".btn-vermenos").css("display", "block");
+});
+
+$(".btn-vermenos").click(function() {
+    $(".btn-vermenos").css("display", "none");
+    $(".vm-card").css("display", "none");
+    $(".btn-vermais").css("display", "block");
+    
+    // volta para a posição salva
+    $("html, body").animate({ scrollTop: scrollPos }, 300); // 300ms para animar de volta
+});
 
 $('.progress-sa').rProgressbar({
     percentage: 35,
