@@ -1,812 +1,354 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="icon" type="image/png" href="imagens/favicon.png"/>
-    <!-- <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/> -->
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
+    <meta name="description" content="Portfólio de Daniel Rodrigues Alves. Salesforce Developer com experiência em automação, escalabilidade e desenvolvimento de sistemas em Fortaleza - CE.">
+    <meta name="keywords" content="Salesforce, Developer, Apex, LWC, JavaScript, Java, Laravel, Fortaleza">
+    <meta name="author" content="Daniel Rodrigues Alves">
+    <meta name="theme-color" content="#0f9d8a">
+    <meta property="og:title" content="Daniel Rodrigues Alves | Salesforce Developer">
+    <meta property="og:description" content="Salesforce Developer focado em automação, escalabilidade e experiência de usuário. Projetos de impacto para Bradesco e Carbel Veículos.">
+    <meta property="og:image" content="https://portfolio.example.com/imagens/fotoPerfil.png">
+    <meta property="og:url" content="https://portfolio.example.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniel Rodrigues Alves | Salesforce Developer">
+    <meta name="twitter:description" content="Salesforce Developer com experiência em automação e desenvolvimento de sistemas.">
+    <link rel="canonical" href="https://portfolio.example.com">
+    <title>Daniel Rodrigues Alves | Salesforce Developer</title>
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" as="style">
+    <link rel="preload" as="image" href="imagens/fotoPerfil.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!-- Menu completo visível apenas em telas médias ou maiores -->
-<div class="uk-visible@s uk-position-fixed uk-position-center-right uk-padding-small" style="z-index: 999;">
-    <ul class="uk-nav uk-nav-default uk-text-center" uk-nav>
-        <li>
-            <a href="#sobre" uk-tooltip="title: Sobre; pos: left">
-                <img width="24" height="24" src="https://img.icons8.com/ios/50/user--v1.png" alt="user--v1"/>
-            </a>
-        </li>
-        <li>
-            <a href="#experiencia" uk-tooltip="title: Experiência; pos: left">
-                <img width="24" height="24" src="https://img.icons8.com/ios/50/experience-skill.png" alt="experience-skill"/>
-            </a>
-        </li>
-        <li>
-            <a href="#salesforce" uk-tooltip="title: Salesforce; pos: left">
-                <img width="24" height="24" src="https://img.icons8.com/ios/50/cloud--v1.png" alt="cloud--v1"/>
-            </a>
-        </li>
-        <li>
-            <a href="#projetos" uk-tooltip="title: Projetos; pos: left">
-                <img width="24" height="24" src="https://img.icons8.com/ios/50/folder-invoices--v1.png" alt="folder-invoices--v1"/>
-            </a>
-        </li>
-        <li>
-            <a href="#tecnologias" uk-tooltip="title: Tecnologias; pos: left">
-                <img width="24" height="24" src="https://img.icons8.com/ios/50/code--v1.png" alt="code--v1"/>
-            </a>
-        </li>
-        <li>
-            <a href="#cursos" uk-tooltip="title: Cursos; pos: left">
-                <img width="24" height="24" src="https://img.icons8.com/ios/50/bookmark-ribbon--v1.png" alt="bookmark-ribbon--v1"/>
-            </a>
-        </li>
-    </ul>
-</div>
-
-<!-- Botão para mobile, agora no topo direito e sem borda branca -->
-<div class="uk-hidden@s uk-position-fixed uk-position-top-right uk-padding-small" style="z-index: 999;">
-    <button class="uk-button uk-button-link uk-light" type="button" uk-toggle="target: #mobile-menu"
-        style="background-color: black; border-radius: 50%; width: 40px; height: 40px;">
-        <span uk-icon="icon: menu; ratio: 1.2"></span>
-    </button>
-
-    <!-- Offcanvas mobile menu -->
-    <div id="mobile-menu" uk-offcanvas="overlay: true; flip: true">
-        <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-secondary uk-light" style="width: 220px;">
-
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            <ul class="uk-nav uk-nav-default uk-margin-auto-vertical">
-                <li><a href="#sobre"><img width="24" height="24" src="imagens/icons/icons8-usuário-24.png" alt="user--v1"/>Sobre</a></li>
-                <li><a href="#experiencia"><img width="24" height="24" src="imagens/icons/icons8-habilidade-de-experiência-24.png" alt="experience-skill"/>Expeciência Profissional</a></li>
-                <li><a href="#salesforce"><img width="24" height="24" src="imagens/icons/icons8-nuvem-24.png" alt="cloud--v1"/>Salesforce</a></li>
-                <li><a href="#projetos"><img width="24" height="24" src="imagens/icons/icons8-pasta-24.png" alt="folder-invoices--v1"/>Projetos</a></li>
-                <li><a href="#tecnologias"><img width="24" height="24" src="imagens/icons/icons8-código-50.png" alt="code--v1"/>Tecnologias</a></li>
-                <li><a href="#cursos"><img width="24" height="24" src="imagens/icons/icons8-fita-de-bookmark-24.png" alt="bookmark-ribbon--v1"/>Cursos</a></li>
-            </ul>
-
+    <header class="header" id="topo">
+        <div class="container header-content">
+            <a class="brand" href="#sobre">Daniel Alves</a>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo claro/escuro" type="button">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav id="main-nav" class="nav" aria-label="Navegacao principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#salesforce">Salesforce</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-    </div>
-</div>
+    </header>
 
-<!-- Ancora Sobre -->
-<div id="sobre"></div>
-
-<div class="uk-section uk-padding-remove" style="background-color: white;">
-    <!-- Banner -->
-    <div id="banner-profile" class="uk-background-cover uk-flex uk-flex-center uk-flex-middle" style="background-color: black; height: 12em;">
-    </div>
-
-    <!-- Foto centralizada absoluta -->
-    <div class="uk-flex uk-flex-center" style="margin-top: -120px;"> <!-- Metade da altura da imagem -->
-        <div id="foto-profile">
-            <img class="uk-border-circle" src="imagens/fotoPerfil.png" alt="Minha foto"
-                style="width: 250px; height: 250px;  box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-        </div>
-    </div>
-
-     <!-- Nome, Título e Localidade -->
-     <div class="uk-section-small uk-text-center uk-padding-small">
-        <h2 class="uk-heading-xsmall uk-margin-small-bottom">Daniel Rodrigues Alves</h2>
-        <p class="uk-text-lead uk-text-default uk-margin-remove" style="font-weight: 500;">Salesforce Developer | Analista de Sistemas</p>
-        <p class="uk-text-meta uk-text-default uk-margin-remove-top">Fortaleza - CE</p>
-    </div>
-    
-    
-    <!-- Declaração pessoal -->
-    <div class="uk-container uk-margin-large-bottom">
-        <div class="uk-grid">
-            <div class="uk-width-expand@m">
-                <p class="uk-text-justify">
-                    A ideia deste portfólio nasceu do desejo de apresentar meus talentos, habilidades e os projetos que desenvolvi ao longo da minha trajetória na área de tecnologia. 
-                    Tudo foi pensado para que você conheça o máximo sobre meu conhecimento técnico e minha história profissional. Tenho <span class="idade"></span> anos e estou imerso no 
-                    universo da tecnologia desde de 2017.
-                </p>
-                <p class="uk-text-justify">
-                    Ao longo da minha trajetória, tive a oportunidade de atuar em empresas desafiadoras e relevantes, como a Jit Technology e a Action Consultoria. Atualmente, na Deloitte 
-                    Digital, participei de projetos de grande impacto para clientes como o Banco Bradesco e a Carbel Veículos. Essas experiências não apenas consolidaram minhas habilidades, 
-                    mas também reforçaram meu compromisso com resultados de qualidade e aprendizado constante.
-                </p>
-                <p class="uk-text-justify">
-                    Sou autodidata e possuo grande agilidade no aprendizado. Diante de novos desafios, rapidamente assimilo os conceitos essenciais e aplico o conhecimento de forma prática. 
-                    Mantenho um alto nível de foco e organização nas minhas atividades, o que contribui para a produtividade e o cumprimento de prazos. Vejo a tecnologia não apenas como uma 
-                    profissão, mas como uma paixão e uma jornada contínua de evolução. Estou entusiasmado para compartilhar minhas experiências e contribuir com projetos inovadores.
-                </p>
-            </div>
-        </div>
-<!-- Ancora Experiencia -->
-<div id="experiencia"></div>
-    </div>
-    
-
-    <div id="descricao-profile" class="uk-section uk-container uk-padding-small uk-padding-remove-top">
-
-        <div class="uk-text-center uk-margin-large-bottom">
-            <h3 class="uk-heading-line uk-text-bold"><span>Experiência Profissional</span></h3>
-        </div>
-        
-        <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-small uk-flex-center uk-margin-medium-bottom" uk-grid>
-        
-            <!-- Deloitte -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
-                    <h5 class="uk-margin-remove">Deloitte Digital <span class="uk-badge">Atual</span></h5>
-                    <p class="uk-margin-small uk-text-muted">Salesforce Developer</p>
-                    <p class="uk-margin-remove-top uk-text-meta">Nov/2023<span id="trabalhoAtual"></span></p>
-                </div>
-            </div>
-        
-            <!-- Boa Safra -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
-                    <h5 class="uk-margin-remove">Action</h5>
-                    <p class="uk-margin-small uk-text-muted">Salesforce Developer</p>
-                    <p class="uk-margin-remove-top uk-text-meta">Jun/2023 - Nov/2023</p>
-                </div>
-            </div>
-        
-            <!-- Jit Technology -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
-                    <h5 class="uk-margin-remove">JIT Technology</h5>
-                    <p class="uk-margin-small uk-text-muted">JavaScript Developer</p>
-                    <p class="uk-margin-remove-top uk-text-meta">Mar/2023 - Out/2023</p>
-                </div>
-            </div>
-        
-            <!-- Sigma Home School -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
-                    <h5 class="uk-margin-remove">Sigma Home School</h5>
-                    <p class="uk-margin-small uk-text-muted">Técnico de Informática - Estágio</p>
-                    <p class="uk-margin-remove-top uk-text-meta">Nov/2020 - Out/2021</p>
-                </div>
-            </div>
-        
-            <!-- ICC Biolabs -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-card-body uk-text-center">
-                    <h5 class="uk-margin-remove">ICC Biolabs</h5>
-                    <p class="uk-margin-small uk-text-muted">Web Developer - Estágio</p>
-                    <p class="uk-margin-remove-top uk-text-meta">Ago/2019 - Nov/2019</p>
-                </div>
-            </div>
-        </div>           
-    
-    </div>
-</div>
-
-<!-- Ancora Salesforce -->
-<div id="salesforce"></div>
-
-<div class="uk-section uk-padding-remove-bottom" style="padding-top: 25px;">
-    <div class="uk-container uk-container-large">
-        <div class="uk-text-center">
-            <h3 class="uk-text-bold"><span>Salesforce</span></h3>
-        </div>
-
-        <div class="uk-margin-small-top uk-text-center">
-            <p class="uk-margin-small-bottom uk-margin-top" style="font-weight: bold;">Superbadges</p>
-            <div class="uk-width-auto uk-flex-center uk-margin-remove" uk-grid>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Process Automation Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/processAutomationSpecialist.png"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Business Administration Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/businessAdministrationSpecialist.png"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Lightning Experience Reports & Dashboards Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/lightningExperienceReportsDashboardsSpecialist.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Settings"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/userAuthenticationSettings.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Multi-Factor Authentication and Single Sign-On Settings"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/multi-FactorAuthenticationAndSingleSign-OnSettings.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Authentication Governance"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/authenticationGovernanceSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Troubleshooting"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/userAuthenticationTroubleshootingSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Authentication Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/userAuthenticationSpecialistSuperbadge.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Access Governance"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/accessGovernanceSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Security Governance Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/securityGovernanceSpecialistSuperbadge.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Access Fundamentals"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/userAccessFundamentalsSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="User Access Troubleshooting"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/userAccessTroubleshootingSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Apex Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/apexSpecialist.png"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Financial Services Cloud Specialist"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/financialServicesCloudSpecialist.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Prompt Builder Templates"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/PromptBuilderTemplatesSuperbadgeUnit.webp"></div>
-                <div class="uk-animation-toggle uk-padding-remove uk-width-auto" style="width: 70px;" uk-tooltip="Agentforce for Service"><img class="uk-border-circle uk-animation-scale-up" width="50" height="50" src="imagens/skills/superbadges/AgentforceforServiceSuperbadgeUnit.webp"></div>
-            </div>
-        </div>
-        <div class="uk-margin-small-top uk-text-center">
-            <p class="uk-margin-small-bottom uk-margin-top" style="font-weight: bold;">Skills</p>
-        
-            <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center uk-text-center" uk-grid>
-                <li>Apex</li>
-                <li>Apex Tests</li>
-                <li>LWC</li>
-                <li>Trigger</li>
-                <li>Flow</li>
-                <li>Approval Process</li>
-                <li>Page Layout</li>
-                <li>Custom Field</li>
-                <li>Email Template</li>
-                <li>Validation Rule</li>
-                <li>Queue</li>
-                <li>Custom Metadata Type</li>
-                <li>API Rest</li>
-                <li>Aura</li>
-                <li>Debugging</li>
-            </ul>
-        </div>        
-        
-    </div>    
-</div>
-
-<!-- Ancora Projetos -->
-<div id="projetos"></div>
-
-<div class="uk-section uk-padding-remove-top uk-padding-remove-bottom" style="padding-bottom: 50px;">
-    <div class="uk-container uk-container-large uk-padding-remove-top">
-
-        <div class="uk-text-center uk-margin-medium-top uk-margin-large-bottom">
-            <h3 class="uk-text-bold"><span>Projetos</span></h3>
-        </div>
-
-        <div id="divProjetos" class="uk-grid-medium uk-grid-row-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-flex-center uk-text-center" uk-grid>
-            <!-- Cards listados automaticamente por meio da classe projetos.js -->
-        </div>
-
-        <p uk-margin>
-            <button class="btn-vermais uk-button uk-button-default uk-button-small uk-align-center">Ver mais</button>
-            <button class="btn-vermenos uk-button uk-button-default uk-button-small uk-align-center">Ver menos</button>
-        </p>
-
-    </div>
-</div>
-
-<!-- Ancora Tecnologias -->
-<div id="tecnologias"></div>
-
-<div class="uk-section uk-padding-remove-top" style="padding-bottom: 25px;">
-    <div class="uk-container uk-container-large">
-        <div class="uk-text-center uk-margin-large-bottom">
-            <h3 class="uk-text-bold"><span>Tecnologias</span></h3>
-        </div>
-
-        <div class="uk-grid-medium uk-grid-row-large uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-margin-small-bottom tecnologias-card" uk-grid>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/salesforce.png">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">Salesforce</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-sa"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-salesforce" uk-toggle>Ver mais</a>
+    <main>
+        <section id="sobre" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Salesforce Developer</p>
+                    <h1>Construo soluções digitais com foco em automação, escalabilidade e experiência.</h1>
+                    <p>
+                        Sou Daniel Rodrigues Alves, analista de sistemas e desenvolvedor Salesforce em Fortaleza - CE.
+                        Tenho <span class="idade"></span> anos e atuo com tecnologia desde 2017, sempre orientado a resultado e melhoria contínua.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+                        <a class="btn btn-ghost" href="#contato">Falar comigo</a>
                     </div>
+                    <ul class="hero-meta">
+                        <li><i class="fa-solid fa-location-dot"></i> Fortaleza - CE</li>
+                        <li><i class="fa-solid fa-briefcase"></i> Deloitte Digital</li>
+                        <li><i class="fa-solid fa-cloud"></i> Salesforce Developer</li>
+                    </ul>
+                </div>
+                <div class="hero-card reveal-delay">
+                    <div class="avatar-wrap">
+                        <img src="imagens/fotoPerfil.png" alt="Foto de Daniel Rodrigues Alves" width="250" height="250">
+                    </div>
+                    <p class="hero-card-title">Resumo profissional</p>
+                    <p>
+                        Experiência em projetos de grande impacto para clientes como Banco Bradesco e Carbel Veículos,
+                        com foco em qualidade de entrega, colaboração e evolução técnica.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                    <div id="modal-salesforce" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/salesforce.png">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">Salesforce</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Tenho um pouco mais de 1 ano estudando Salesforce, durante esse tempo já realizei treinamentos, fiz cursos e ganhei certificados na área. Salesforce hoje é a tecnologia que estudo atualmente.</p>
-                                <div class="progress-sa"></div>
-                            </div>
+        <section id="experiencia" class="section section-alt">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Trajetória</p>
+                    <h2>Experiência Profissional</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>Deloitte Digital <span class="chip chip-live">Atual</span></h3>
+                            <p class="timeline-role">Salesforce Developer</p>
+                            <p class="timeline-date">Nov/2023 <span id="trabalhoAtual"></span></p>
                         </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>Action Consultoria</h3>
+                            <p class="timeline-role">Salesforce Developer</p>
+                            <p class="timeline-date">Jun/2023 - Nov/2023</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>JIT Technology</h3>
+                            <p class="timeline-role">JavaScript Developer</p>
+                            <p class="timeline-date">Mar/2023 - Out/2023</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>Sigma Home School</h3>
+                            <p class="timeline-role">Técnico de Informática</p>
+                            <p class="timeline-date">Nov/2020 - Out/2021</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>ICC Biolabs</h3>
+                            <p class="timeline-role">JavaScript Developer - Estágio</p>
+                            <p class="timeline-date">Ago/2019 - Nov/2019</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="salesforce" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Especialidade</p>
+                    <h2>Salesforce</h2>
+                </div>
+
+                <div class="badge-panel reveal">
+                    <div>
+                        <h3>Superbadges</h3>
+                        <p>Conquistas práticas que validam domínio técnico em cenários reais.</p>
+                    </div>
+                    <div class="badge-grid">
+                        <img src="imagens/skills/superbadges/processAutomationSpecialist.png" alt="Process Automation Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/businessAdministrationSpecialist.png" alt="Business Administration Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/lightningExperienceReportsDashboardsSpecialist.webp" alt="Reports and Dashboards Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/userAuthenticationSettings.webp" alt="User Authentication Settings" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/multi-FactorAuthenticationAndSingleSign-OnSettings.webp" alt="MFA and SSO Settings" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/authenticationGovernanceSuperbadgeUnit.webp" alt="Authentication Governance" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/userAuthenticationTroubleshootingSuperbadgeUnit.webp" alt="User Authentication Troubleshooting" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/userAuthenticationSpecialistSuperbadge.webp" alt="User Authentication Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/accessGovernanceSuperbadgeUnit.webp" alt="Access Governance" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/securityGovernanceSpecialistSuperbadge.webp" alt="Security Governance Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/userAccessFundamentalsSuperbadgeUnit.webp" alt="User Access Fundamentals" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/userAccessTroubleshootingSuperbadgeUnit.webp" alt="User Access Troubleshooting" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/apexSpecialist.png" alt="Apex Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/financialServicesCloudSpecialist.webp" alt="Financial Services Cloud Specialist" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/PromptBuilderTemplatesSuperbadgeUnit.webp" alt="Prompt Builder Templates" loading="lazy" width="68" height="68">
+                        <img src="imagens/skills/superbadges/AgentforceforServiceSuperbadgeUnit.webp" alt="Agentforce for Service" loading="lazy" width="68" height="68">
+                    </div>
+                </div>
+
+                <div class="skills-cloud reveal-delay">
+                    <span>Apex</span>
+                    <span>Apex Tests</span>
+                    <span>LWC</span>
+                    <span>Trigger</span>
+                    <span>Flow</span>
+                    <span>Approval Process</span>
+                    <span>Page Layout</span>
+                    <span>Custom Field</span>
+                    <span>Email Template</span>
+                    <span>Validation Rule</span>
+                    <span>Queue</span>
+                    <span>Custom Metadata Type</span>
+                    <span>API REST</span>
+                    <span>Aura</span>
+                    <span>Debugging</span>
+                </div>
+
+                <div class="trailhead-link reveal-delay">
+                    <a href="https://www.salesforce.com/trailblazer/drodriguesalves" target="_blank" rel="noopener noreferrer">
+                        <img src="imagens/skills/tecnologias/salesforce.png" alt="Salesforce">
+                        <span>Ver meu Trailhead</span>
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section section-alt">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Portfólio técnico</p>
+                    <h2>Projetos</h2>
+                </div>
+                <div id="divProjetos" class="projects-grid"></div>
+                <div class="projects-actions reveal">
+                    <button class="btn btn-primary btn-vermais" type="button">Ver mais</button>
+                    <button class="btn btn-ghost btn-vermenos" type="button">Ver menos</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Stack principal</p>
+                    <h2>Tecnologias</h2>
+                </div>
+
+                <div class="tech-grid">
+                    <article class="tech-card reveal">
+                        <div class="tech-title"><img src="imagens/skills/tecnologias/salesforce.png" alt="Salesforce" loading="lazy" width="34" height="34"><h3>Salesforce</h3></div>
+                        <p>Experiência em administração e desenvolvimento com foco em automações e governança.</p>
+                        <div class="meter"><span style="width: 82%;"></span></div>
+                        <small>Avancado</small>
+                    </article>
+                    <article class="tech-card reveal">
+                        <div class="tech-title"><img src="imagens/skills/tecnologias/Laravel.png" alt="Laravel" loading="lazy" width="34" height="34"><h3>Laravel</h3></div>
+                        <p>Criação de sistemas web com arquitetura organizada e manutenção simples.</p>
+                        <div class="meter"><span style="width: 64%;"></span></div>
+                        <small>Intermediario</small>
+                    </article>
+                    <article class="tech-card reveal">
+                        <div class="tech-title"><img src="imagens/skills/tecnologias/java.jpg" alt="Java" loading="lazy" width="34" height="34"><h3>Java</h3></div>
+                        <p>Desenvolvimento em Java para projetos acadêmicos e APIs com Spring.</p>
+                        <div class="meter"><span style="width: 72%;"></span></div>
+                        <small>Intermediario+</small>
+                    </article>
+                    <article class="tech-card reveal">
+                        <div class="tech-title"><img src="imagens/skills/tecnologias/js.png" alt="JavaScript" loading="lazy" width="34" height="34"><h3>JavaScript</h3></div>
+                        <p>Uso contínuo para interatividade no front-end e automação em páginas.</p>
+                        <div class="meter"><span style="width: 78%;"></span></div>
+                        <small>Intermediario+</small>
+                    </article>
+                    <article class="tech-card reveal">
+                        <div class="tech-title"><img src="imagens/skills/tecnologias/html.jpg" alt="HTML" loading="lazy" width="34" height="34"><h3>HTML</h3></div>
+                        <p>Estruturação semântica de interfaces e foco em legibilidade do código.</p>
+                        <div class="meter"><span style="width: 90%;"></span></div>
+                        <small>Avancado</small>
+                    </article>
+                    <article class="tech-card reveal">
+                        <div class="tech-title"><img src="imagens/skills/tecnologias/css.png" alt="CSS" loading="lazy" width="34" height="34"><h3>CSS</h3></div>
+                        <p>Estilização moderna com responsividade e consistência visual.</p>
+                        <div class="meter"><span style="width: 84%;"></span></div>
+                        <small>Avancado</small>
+                    </article>
+                </div>
+
+                <div class="other-tech reveal-delay">
+                    <h3>Outras tecnologias</h3>
+                    <div class="icon-list">
+                        <img src="imagens/skills/tecnologias/postman.jpg" alt="Postman" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/postgresql.png" alt="PostgreSQL" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/mysql.png" alt="MySQL" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/git.jpg" alt="Git" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/react.png" alt="React" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/php.jpg" alt="PHP" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/c.webp" alt="C" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/node.png" alt="Node.js" loading="lazy" width="38" height="38">
+                        <img src="imagens/skills/tecnologias/docker.png" alt="Docker" loading="lazy" width="38" height="38">
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/Laravel.png">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">Laravel</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-l"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-laravel" uk-toggle>Ver mais</a>
-                    </div>
-                
-                    <div id="modal-laravel" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/Laravel.png">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">Laravel</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Tive minha experiência com Laravel no momento em que realizava meu estágio, tive que aprender bem rápido como funcionava o framework, mas isso não foi problema. Consigo desenvolver muito bem usando esse framework.</p>
-                                <div class="progress-l"></div>
-                                <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                                    <div class="uk-margin-remove-top uk-text-bolder">
-                                        <p class="uk-text-right">Tempo de uso: 6 meses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="56" height="56" src="imagens/skills/tecnologias/java.jpg">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">Java</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-j"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-java" uk-toggle>Ver mais</a>
-                    </div>
-                
-                    <div id="modal-java" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/java.jpg">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">Java</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Tenho bastante expêriencia com Java, tanto utilizando somente o java puro, como também utilizando para Web, com auxilio de outras bibliotecas. Utilizo Java desde o inicio do meu ensino médio e permaneço usando até hoje.</p>
-                                <div class="progress-j"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/wordpress.webp">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">Wordpress</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-wo"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-word" uk-toggle>Ver mais</a>
-                    </div>
+        </section>
 
-                    <div id="modal-word" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/wordpress.webp">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">Wordpress</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Utilizei por um tempo o Wordpress no meu ensino médio realizando a criação sites e estudando a própria plataforma. Fiz um site em Wordpress para finalizar um disciplina da faculdade.</p>
-                                <div class="progress-wo"></div>
-                                <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                                    <div class="uk-width-1-2">
-                                        <p class="uk-text-bolder uk-margin-remove-bottom">Tempo de uso: 8 meses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section id="cursos" class="section section-alt">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Formação</p>
+                    <h2>Cursos e treinamentos</h2>
+                </div>
+
+                <div class="courses-grid">
+                    <article class="course-card reveal">
+                        <h3>Análise e desenvolvimento de sistemas</h3>
+                        <p>UniFametro</p>
+                        <span>2023</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Técnico em Informática</h3>
+                        <p>EEEP Paulo Petrola</p>
+                        <span>2019</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Treinamento Salesforce - C3C</h3>
+                        <p>C3C Software</p>
+                        <span>2021</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Scrum Foundation Professional Certification</h3>
+                        <p>CertiProf</p>
+                        <span>2023</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Remote Work Professional Certification</h3>
+                        <p>CertiProf</p>
+                        <span>2023</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Curso de JavaScript e TypeScript</h3>
+                        <p>Otavio e Calogi - Udemy</p>
+                        <span>Incompleto</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Entendendo ECMAScript 6</h3>
+                        <p>Code Prestige - Udemy</p>
+                        <span>2019</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Introdução ao banco de dados com MySQL e PHPMyAdmin</h3>
+                        <p>Diego Mariano - Udemy</p>
+                        <span>2020</span>
+                    </article>
+                    <article class="course-card reveal">
+                        <h3>Criando REST API com Laravel 5.7</h3>
+                        <p>Hcode Treinamentos</p>
+                        <span>2019</span>
+                    </article>
                 </div>
             </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/unity.jpg">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">Unity</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-un"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-unity" uk-toggle>Ver mais</a>
-                    </div>
+        </section>
+    </main>
 
-                    <div id="modal-unity" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/unity.jpg">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">Unity</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Comecei a estudar e criar jogos na Unity atráves de um grupo de jogos da faculdade. Desenvolvi um pequeno jogo de corrida que já exista somente para testar meus conhecimentos e depois realizei um labirinto 3D com um personagem mais jogavel.</p>
-                                <div class="progress-un"></div>
-                                <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                                    <div class="uk-margin-remove-top uk-text-bolder">
-                                        <p class="uk-text-right">Tempo de uso: 6 meses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <footer id="contato" class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Vamos conversar?</h2>
+                <p>Aberto a oportunidades para projetos Salesforce e desenvolvimento de sistemas.</p>
+                <a class="email-link" href="mailto:drodriguesalves2@gmail.com">drodriguesalves2@gmail.com</a>
             </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/js.png">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">Javascript</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-js"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-js" uk-toggle>Ver mais</a>
-                    </div>
-
-                    <div id="modal-js" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/js.png">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">Javascript</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Não tenho projetos desenvolvidos com JS, mas sempre utilizo para dar interatividade as minhas páginas. Mas já utilizei frameworks como React e React Native para estudos.</p>
-                                <div class="progress-js"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/html.jpg">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">HTML</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-html"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-html" uk-toggle>Ver mais</a>
-                    </div>
-
-                    <div id="modal-html" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/html.jpg">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">HTML</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Utilizo bastante HTML nos meus projetos, então o tempo todo estou mexendo e descobrindo algo novo. Quase todos meus proejetos possuem HTML, então basta acessar meu Git e vizualizar cada um deles.</p>
-                                <div class="progress-html"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-animation-toggle uk-height-small" tabindex="0">
-                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/css.png">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-text-normal uk-margin-remove-bottom">CSS</h4>
-                            </div>
-                        </div>
-                        <div class="uk-margin-small-top">
-                            <div class="progress-css"></div>
-                        </div>
-                        <a class="vermais-decoration" href="#modal-css" uk-toggle>Ver mais</a>
-                    </div>
-
-                    <div id="modal-css" class="modal-tecnologia" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="imagens/skills/tecnologias/css.png">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-text-normal uk-margin-remove-bottom">CSS</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>O CSS está sempre presente nos meus projetos, estou sempre estilizando as minhas páginas e sempre descobrindo algo novo para esta utilizando.</p>
-                                <div class="progress-css"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/dalvesr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Danalvesr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.salesforce.com/trailblazer/drodriguesalves" target="_blank" rel="noopener noreferrer" aria-label="Trailblazer"><i class="fa-solid fa-cloud"></i></a>
             </div>
         </div>
+        <p class="footer-copy anoAtual"></p>
+    </footer>
 
-        <div class="uk-margin-small-top" style="float: right;">
-            <p class="uk-margin-remove-bottom uk-margin-top uk-text-right" style="font-weight: bold;">Outras tecnologias</p>
-            <div class="uk-grid-small" uk-grid>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/postman.jpg"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/postgresql.png"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/mysql.png"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/git.jpg"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/react.png"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/php.jpg"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/c.webp"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/node.png"></div>
-                <div class="uk-animation-toggle" style="width: 25px;"><img class="uk-border-circle uk-animation-scale-up" width="25" height="25" src="imagens/skills/tecnologias/docker.png"></div>
-            </div>
-        </div>
-    </div>
-</div>
+    <a class="to-top" href="#topo" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
 
-<!-- Ancora Cursos -->
-<div id="cursos"></div>
-
-<div class="uk-section uk-padding-remove-bottom" style="padding-top: 25px;">
-    <div class="uk-container uk-container-large uk-margin-medium-bottom">
-        <div class="uk-text-center">
-            <h3 class="uk-text-bold uk-margin-remove-bottom"><span>Cursos</span></h3>
-        </div>
-
-        <h5 class="uk-text-center uk-margin-remove-top uk-margin-large-bottom">Treinamentos</h5>
-
-        <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match uk-text-center" uk-grid>
-            <div>
-                <ul uk-accordion="multiple: true; duration: 300">
-                    <li>
-                        <a class="uk-accordion-title" href="#">Análise e desenvolvimento de sistemas</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">UniFametro</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2023</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Jogos 2D com Unity + C#</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">Wiliam Nascimento - Udemy</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">incompleto</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Introduction to IoT Português</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">Cisco Virtual Academy</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2022</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">NDG Linux Unhatched Português</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">Cisco Virtual Academy</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2022</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul uk-accordion="multiple: true; duration: 300">
-                    <li>
-                        <a class="uk-accordion-title" href="#">Técnico em Informática</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">EEEP Paulo Petrola</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2019</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Treinamento Salesforce - C3C</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">C3C Software</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2021</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Scrum Foundation Professional Certification SFPC</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">CertiProf</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2023</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Remote Work Professional Certification RWPC</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">CertiProf</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2023</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul uk-accordion="multiple: true; duration: 300">
-                    <li>
-                        <a class="uk-accordion-title" href="#">Curso de Javascript e TypeScript</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">OTÁVIO & CALOGI - Udemy</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">incompleto</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Intendendo ECMAScript 6</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">Code Prestige - Udemy</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2019</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Introdução ao banco de dados com MySQL & PHPMyAdmin</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">Diego Mariano - Udemy</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2020</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="uk-accordion-title" href="#">Criando REST API com Laravel 5.7</a>
-                        <div class="uk-accordion-content uk-grid-small uk-flex-middle uk-margin-small-top" uk-grid>
-                            <div class="uk-width-1-2">
-                                <p class="uk-text-center uk-text-bolder uk-margin-remove-bottom">Hcode Treinamentos</p>
-                            </div>
-                            <div class="uk-margin-remove-top uk-width-1-4">
-                                <p class="uk-text-right">2019</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="uk-section uk-section-small uk-section-secondary">
-    <div class="uk-container">
-
-        <div style="justify-content: center" class="uk-dividir-vertical" uk-grid>
-                <div>
-                    <a href="https://www.linkedin.com/in/dalvesr/" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <div>
-                    <a href="https://github.com/Danalvesr" target="_blanck"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div>
-                    <a href="https://www.salesforce.com/trailblazer/drodriguesalves" target="_blanck"><i class="fa-solid fa-cloud"></i></a>
-                </div>
-                <div>
-                    <a href="mailto:drodriguesalves2@gmail.com?subject= Portifolio online"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-        </div>
-    </div>
-    <i id="uk-totop" class="fa-sharp fa-solid fa-chevron-up fa-xl" uk-scroll></i>
-    <p class="uk-text-uppercase uk-margin-remove-bottom anoAtual" style="text-align: center; font-size: 12px;"></p>
-    <p class="uk-text-uppercase uk-margin-remove-top" style="text-align: center; font-size: 11px;">Todos os direitos reservados</p>
-</div>
-
+    <script src="js/projetos.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
-<script src="js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/jquery.fadethis.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-<script src="js/jQuery.rProgressbar.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/projetos.js"></script>
-<script>
-$(document).ready(function() {
-    anoAtual();
-    idade();
-})
-</script>
 </html>

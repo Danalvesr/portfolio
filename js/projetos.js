@@ -1,109 +1,110 @@
-$(document).ready(() => {
-    let divProjetos = document.querySelector("#divProjetos");
+(function () {
+    var projetos = [
+        {
+            titulo: 'Desafio C3C - Biblioteca',
+            descricao: 'Projeto desenvolvido em treinamento. Criação de uma biblioteca.',
+            imagem: 'imagens/projetos/salesforce.webp',
+            vmcard: '',
+            tecnologia: 'Salesforce'
+        },
+        {
+            titulo: 'Automação de Processos',
+            descricao: 'Superbadge com automações de fluxo e regras de negócio em Salesforce.',
+            imagem: 'imagens/projetos/salesforce.webp',
+            vmcard: 'vm-card',
+            tecnologia: 'Salesforce'
+        },
+        {
+            titulo: 'Parking Control - API',
+            descricao: 'API com Spring Boot e PostgreSQL para controle de vagas e fluxo de entrada.',
+            imagem: 'imagens/projetos/rest-api.webp',
+            vmcard: '',
+            tecnologia: 'Spring'
+        },
+        {
+            titulo: 'CRUD Cliente - API',
+            descricao: 'API para gerenciamento de clientes com endpoints REST e validações.',
+            imagem: 'imagens/projetos/rest-api.webp',
+            vmcard: '',
+            tecnologia: 'Spring'
+        },
+        {
+            titulo: 'Gerência de Eventos',
+            descricao: 'Software para criação de eventos e controle de convidados.',
+            imagem: 'imagens/projetos/springBoot.webp',
+            vmcard: '',
+            tecnologia: 'Spring'
+        },
+        {
+            titulo: 'BancoTech',
+            descricao: 'Sistema de gerenciamento de finanças com operações CRUD em PHP puro.',
+            imagem: 'imagens/projetos/bancotech.webp',
+            vmcard: 'vm-card',
+            tecnologia: 'PHP'
+        },
+        {
+            titulo: 'TheNet',
+            descricao: 'Portal de filmes e séries para prática de arquitetura web com PHP.',
+            imagem: 'imagens/projetos/thenet.webp',
+            vmcard: 'vm-card',
+            tecnologia: 'PHP'
+        },
+        {
+            titulo: 'UserNet',
+            descricao: 'Sistema de login com diferentes camadas de segurança em PHP.',
+            imagem: 'imagens/projetos/usernet.webp',
+            vmcard: 'vm-card',
+            tecnologia: 'PHP'
+        },
+        {
+            titulo: 'Community Manager',
+            descricao: 'Software para gerenciamento de setores de um hub de tecnologia.',
+            imagem: 'imagens/projetos/community.webp',
+            vmcard: 'vm-card',
+            tecnologia: 'Laravel'
+        },
+        {
+            titulo: 'InforGames',
+            descricao: 'Projeto educacional para consolidar fundamentos de desenvolvimento web.',
+            imagem: 'imagens/projetos/inforgames.webp',
+            vmcard: 'vm-card',
+            tecnologia: 'HTML/CSS'
+        },
+        {
+            titulo: 'DevilWheels',
+            descricao: 'Jogo de corrida desenvolvido com Unity e C# como projeto acadêmico.',
+            imagem: 'imagens/projetos/DevilWheels.png',
+            vmcard: 'vm-card',
+            tecnologia: 'Unity'
+        },
+        {
+            titulo: 'Labirinto 3D',
+            descricao: 'Jogo 3D para estudos de mecânicas, ambiente e movimentação em Unity.',
+            imagem: 'imagens/projetos/labirinto3d.png',
+            vmcard: 'vm-card',
+            tecnologia: 'Unity'
+        }
+    ];
 
-    let dadosPuros = JSON.parse(`
-    {
-        "projetos": [
-            {
-                "titulo": "Desafio C3C - Biblioteca",
-                "descricao": "Projeto desenvolvido em treinamento. Criação de uma biblioteca.",
-                "imagem": "imagens/projetos/salesforce.webp",
-                "vmcard": "",
-                "tecnologia": "Salesforce"
-            },
-            {
-                "titulo": "Automação de Processos",
-                "descricao": "Superbadge - O ponto alto dos meus estudos em salesforce foi ter concluído essa superbadge!",
-                "imagem": "imagens/projetos/salesforce.webp",
-                "vmcard": "vm-card",
-                "tecnologia": "Salesforce"
-            },
-            {
-                "titulo": "Parking Control - API",
-                "descricao": "API desenvolvida com Spring Boot, PostgreSQL e usando o Postman para realizar os testes de rotas.",
-                "imagem": "imagens/projetos/rest-api.webp",
-                "vmcard": "",
-                "tecnologia": "Spring"
-            },
-            {
-                "titulo": "CRUD Cliente - API",
-                "descricao": "API completa para gerenciamento de clientes. Desenvolvido com Spring, PostgreSQL e Postman.",
-                "imagem": "imagens/projetos/rest-api.webp",
-                "vmcard": "",
-                "tecnologia": "Spring"
-            },
-            {
-                "titulo": "Gêrencia de Eventos",
-                "descricao": "Software para criar eventos e adicionar convidados. Criado com Spring e PostgreSQL.",
-                "imagem": "imagens/projetos/springBoot.webp",
-                "vmcard": "",
-                "tecnologia": "Spring"
-            },
-            {
-                "titulo": "BancoTech",
-                "descricao": "Sistema de gerenciamento de finanças, possui o CRUD e foi desenvolvido em PHP puro.",
-                "imagem": "imagens/projetos/bancotech.webp",
-                "vmcard": "vm-card",
-                "tecnologia": "PHP"
-            },
-            {
-                "titulo": "TheNet",
-                "descricao": "Site sobre filmes e séries, criado para a prática do curso, totalmente desenvolvido em PHP puro.",
-                "imagem": "imagens/projetos/thenet.webp",
-                "vmcard": "vm-card",
-                "tecnologia": "PHP"
-            },
-            {
-                "titulo": "UserNet",
-                "descricao": "Sistema de login com vários tipos de segurança aplicada, totalmente desenvolvido em PHP puro.",
-                "imagem": "imagens/projetos/usernet.webp",
-                "vmcard": "vm-card",
-                "tecnologia": "PHP"
-            },
-            {
-                "titulo": "Community Manager",
-                "descricao": "Software para gerencia de setores de um hub de tecnologia. Desenvolvido em Laravel.",
-                "imagem": "imagens/projetos/community.webp",
-                "vmcard": "vm-card",
-                "tecnologia": "Laravel"
-            },
-            {
-                "titulo": "InforGames",
-                "descricao": "Projeto desenvolvido para colocar em prática as habilidades do curso de informática.",
-                "imagem": "imagens/projetos/inforgames.webp",
-                "vmcard": "vm-card",
-                "tecnologia": "HTML/CSS"
-            },
-            {
-                "titulo": "DevilWheels",
-                "descricao": "Projeto da faculdade desenvolvido para a prática de games e usando a linguagem C#.",
-                "imagem": "imagens/projetos/DevilWheels.png",
-                "vmcard": "vm-card",
-                "tecnologia": "Unity"
-            },
-            {
-                "titulo": "Labirinto 3D",
-                "descricao": "Projeto desenvolvido para aprender mais sobre a plataforma Unity e a linguagem C#.",
-                "imagem": "imagens/projetos/labirinto3d.png",
-                "vmcard": "vm-card",
-                "tecnologia": "Unity"
-            }           
-        ]
+    function renderProjetos() {
+        var container = document.querySelector('#divProjetos');
+        if (!container) {
+            return;
+        }
+
+        var html = projetos.map(function (projeto) {
+            return '<article class="project-card ' + projeto.vmcard + '">' +
+                '<img src="' + projeto.imagem + '" alt="Projeto ' + projeto.titulo + '" loading="lazy" width="450" height="300">' +
+                '<div class="project-body">' +
+                    '<span class="project-tag">' + projeto.tecnologia + '</span>' +
+                    '<h3>' + projeto.titulo + '</h3>' +
+                    '<p>' + projeto.descricao + '</p>' +
+                '</div>' +
+            '</article>';
+        }).join('');
+
+        container.innerHTML = html;
     }
-    `);
 
-    dadosPuros.projetos.map((projeto) => {
-        divProjetos.innerHTML  += `<div class="${projeto.vmcard}">
-            <div class="projects-card uk-card uk-card-default uk-card-hover">
-                <div class="uk-card-media-top">
-                    <img src="${projeto.imagem}" width="1800" height="1200">
-                </div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <div class="uk-card-badge uk-label">${projeto.tecnologia}</div>
-                    <h3 class="uk-card-title">${projeto.titulo}</h3>
-                    <p>${projeto.descricao}</p>
-                </div>
-            </div>
-        </div>`
-    })
-});
+    document.addEventListener('DOMContentLoaded', renderProjetos);
+})();
